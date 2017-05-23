@@ -1,36 +1,32 @@
-.header,.menu{
-  height: 60px;
+.header{
   margin: 0;
   padding: 0;
-  background: #000;
 }
-.logo,.menu li{
-  float: left;
+.nav{
+  background: #11bf79;
+}
+.menu{
+  height: 130px;
+  width: 100%;
+  margin: 0;
 }
 .menu li{
-  height: 60px;
-  line-height: 60px;
-
+  height: 130px;
+  float: left;
+  line-height: 130px;
+  text-align: center;
+  margin-left: 40px;
 }
 .menu a{
-  text-decoration: none;
-  margin-left: 16px;
-  margin-right: 16px;
-  font-size: 13px;
   color:white;
-  font-weight: 700;
+  font-size: 30px;
 }
-.logo img{
-  width: 76px;
-  height: 36px;
-  margin-top: 14px;
-  margin-left: 30px;
+.user{
+  height: 130px;
 }
-.menu span{
-  margin-top: 5px;
+.user img{
+  height: 80px;
+  width: 80%;
+  margin-top: 25px;
 }
-.menu li:hover{
-  border-top: 2px solid white;
-}
-
 

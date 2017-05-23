@@ -1,20 +1,24 @@
 <template>
-  <div class="container-fluid header">
-    <a class="logo"><img src="../assets/img/logo.png" alt=""></a>
-    <ul class="menu">
-      <li><a href="">目的地</a></li>
-      <li><a href="">锦囊</a></li>
-      <li><a href="">行程助手</a></li>
-      <li><a href="">社区<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
-      <li><a href="">商城</a></li>
-      <li><a href="">机票</a></li>
-      <li><a href="">酒店</a></li>
-      <li><a href="">预定<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
-    </ul>
+  <div>
+    <div class="container-fluid header">
+      <div class="row nav">
+        <div class="col-xs-8">
+          <ul class="menu">
+            <li><a href="">首页</a></li>
+            <li><a href="">目的地</a></li>
+            <li><a href="">商城</a></li>
+            <li><a href="">社区</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-2 user col-xs-offset-2"><img src="../assets/img/user.png" alt=""></div>
+      </div>
+    </div>
+    <banner></banner>
   </div>
 </template>
 <script>
-  import $ from 'jquery'
+  import $ from 'jquery';
+  import banner from './Carousel_figure.vue';
   export default {
     data:function () {
       return {
