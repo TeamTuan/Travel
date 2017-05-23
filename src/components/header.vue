@@ -27,13 +27,16 @@
     },
     methods:{
 
+    },
+    components:{
+      banner
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  @import "../assets/css/bootstrap.css";
+  @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/common.css";
   @import "../assets/css/header.css";
 </style>

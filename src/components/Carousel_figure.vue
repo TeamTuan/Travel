@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    
+    666666
   </div>
 </template>
 
