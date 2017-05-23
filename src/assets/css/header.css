@@ -1,0 +1,36 @@
+.header,.menu{
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+.logo,.menu li{
+  float: left;
+}
+.menu li{
+  height: 60px;
+  line-height: 60px;
+
+}
+.menu a{
+  text-decoration: none;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 13px;
+  color:white;
+  font-weight: 700;
+}
+.logo img{
+  width: 76px;
+  height: 36px;
+  margin-top: 14px;
+  margin-left: 30px;
+}
+.menu span{
+  margin-top: 5px;
+}
+.menu li:hover{
+  border-top: 2px solid white;
+}
+
+
