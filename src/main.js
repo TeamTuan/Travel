@@ -3,6 +3,9 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import "./assets/js/flexible";
+import "./assets/js/jquery-3.2.1.min";
+import "./assets/js/zepto.min";
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

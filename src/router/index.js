@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import indexpage from '@/components/index.vue'
+import user from '@/components/user.vue'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'indexpage',
-      component: indexpage
+      name: 'user',
+      component: user
     }
   ]
 })
