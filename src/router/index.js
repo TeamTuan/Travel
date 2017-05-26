@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import user from '@/components/user.vue'
+import index from '@/components/index.vue'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'user',
-      component: user
+      name: 'index',
+      component: index
     }
   ]
 })

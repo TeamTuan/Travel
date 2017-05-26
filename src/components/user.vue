@@ -7,7 +7,6 @@
             <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true"></span>
           </div>
-
         </div>
       </div>
       <div class="row row3"  style="height:2rem;">
@@ -120,12 +119,12 @@ export default{};
   .row{
     margin: 0;
   }
-.main_img{
-  background: pink;
-  height:6rem;
-  width:10rem;
-  overflow: hidden;
-}
+  .main_img{
+    background: pink;
+    height:6rem;
+    width:10rem;
+    overflow: hidden;
+  }
   .row1{
     height:1rem;
     margin-top:0.3rem;
@@ -166,7 +165,6 @@ export default{};
     margin-left: 0.5rem;
   }
   .banner div{
-
     background:#fff;
   }
   .list{

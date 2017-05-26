@@ -1,32 +1,34 @@
 .header{
   margin: 0;
   padding: 0;
+  height: 1.73rem;
+  width: 100%;
 }
 .nav{
   background: #11bf79;
 }
 .menu{
-  height: 130px;
+  height: 1.73rem;
   width: 100%;
   margin: 0;
 }
 .menu li{
-  height: 130px;
+  height: 1.73rem;
   float: left;
-  line-height: 130px;
+  line-height: 1.73rem;
   text-align: center;
-  margin-left: 40px;
+  margin-left: 0.53rem;
 }
 .menu a{
   color:white;
   font-size: 30px;
 }
 .user{
-  height: 130px;
+  height: 1.73rem;
 }
 .user img{
-  height: 80px;
+  height: 1.06rem;
   width: 80%;
-  margin-top: 25px;
+  margin-top: 0.33rem;
 }
 
