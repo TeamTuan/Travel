@@ -13,12 +13,10 @@
         <div class="col-xs-2 user col-xs-offset-2"><img src="../assets/img/user.png" alt=""></div>
       </div>
     </div>
-    <banner></banner>
   </div>
 </template>
 <script>
   import $ from 'jquery';
-  import banner from './Carousel_figure.vue';
   export default {
     data:function () {
       return {
@@ -29,7 +27,7 @@
 
     },
     components:{
-      banner
+
     }
   }
 </script>
