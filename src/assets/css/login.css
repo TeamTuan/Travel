@@ -1,7 +1,8 @@
-html,body,.container{
+html,body{
   height:2000px;
 }
 .container{
+  height:2000px;
   background: #40c896;
 }
 .row1{
