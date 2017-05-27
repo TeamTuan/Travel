@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding: 0;
+}
+html,body,.container{
+  height: 2000px;
+}
+.container{
+  background:#40c895;
+}
+.row1{
+  color:#f5f7f2;
+  margin-top:0.5rem;
+  font-size:0.4rem;
+}
+.glyphicon-arrow-left{
+  margin-top:-0.25rem;
+}
+.row2{
+  color:#f5f7f2;
+  font-size:0.4rem;
+  margin:2.1rem auto;
+}
+.telp .value{
+    margin-left:0.5rem;
+}
+.telp .glyphicon-chevron-down{
+  float:left;
+  margin-left:0.9rem;
+}
+.row3{
+  color:#f5f7f2;
+  font-size:0.4rem;
+}
+.input{
+  margin-top:-1rem;
+  margin-left:1rem;
+}
+.push{
+  margin-top:-1rem;
+  margin-left:4rem;
+}
+.row4{
+  font-size:0.4rem;
+  color:#40c895;
+  margin-top:4rem;
+  margin-left:3rem;
+}
+
