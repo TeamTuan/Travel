@@ -3,10 +3,12 @@
     <div class="main_img">
       <div class="row row1">
         <div class="col-xs-3 col-xs-offset-9" style="height: 100%;">
-          <div class="row row2">
-            <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true"></span>
+          <div class="row row2" style="margin-top: 0.5rem;">
+            <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true" style="font-size:35px;"></span>
+            <router-link to="/setting/" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
+
           </div>
+
         </div>
       </div>
       <div class="row row3"  style="height:2rem;">
@@ -17,7 +19,7 @@
           <span>小魔女1111</span>&gt;
         </div>
         <div class="col-xs-2" style="height:100%">
-          <span class="glyphicon glyphicon-calendar" style="position: relative;top:50%;margin-top:-1rem;" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-calendar" style="position: relative;top:50%;margin-top:-1rem;font-size: 70px" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row" style="line-height:2rem;">
@@ -32,19 +34,19 @@
     <div  class="mine row">
       <div class="col-xs-4">
         <div class="div1">
-          <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-list-alt" aria-hidden="true"  style="font-size:40px;"></span>
           <div>我的收藏</div>
         </div>
       </div>
       <div class="col-xs-4">
         <div class="div1">
-          <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-inbox" aria-hidden="true" style="font-size:40px;"></span>
           <div>我的锦囊</div>
         </div>
       </div>
       <div class="col-xs-4">
         <div class="div1">
-          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:40px;"></span>
           <div>我的行程</div>
         </div>
 
@@ -53,54 +55,40 @@
     <div class="banner">
       <div class="banner1">
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-file icons"  aria-hidden="true"></span>
           <span>我的折扣订单</span>
         </div>
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
           <span>我的折扣优惠券</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
       </div>
       <div class="banner2">
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
           <span>我的游记</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
           <span>等我评价的目的地</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
           <span>我发布的帖子</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
           <span>我的问答</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         <div class="row list">
-          <span>
-
-          </span>
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
           <span>我的结伴</span>
-          <span class="right">&gt;</span>
+          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
       </div>
     </div>
@@ -119,18 +107,20 @@ export default{};
   .row{
     margin: 0;
   }
-  .main_img{
-    background: pink;
-    height:6rem;
-    width:10rem;
-    overflow: hidden;
-  }
+.main_img{
+  background: #439865;
+  height:6rem;
+  width:10rem;
+  overflow: hidden;
+  color:white;
+}
   .row1{
     height:1rem;
     margin-top:0.3rem;
   }
   .row2{
     height: 100%;
+    width: 4rem;
   }
   .user{
     height: 2rem;
@@ -139,7 +129,7 @@ export default{};
   }
   .mine{
     height:2rem;
-    background:lightpink;
+    background:white;
     color: green;
   }
   .div1{
@@ -148,7 +138,7 @@ export default{};
   }
   .banner{
     height:12rem;
-    background: gray;
+    background: #D8D8D8;
     overflow:hidden;
   }
   .banner1{
@@ -165,6 +155,7 @@ export default{};
     margin-left: 0.5rem;
   }
   .banner div{
+
     background:#fff;
   }
   .list{
@@ -172,9 +163,14 @@ export default{};
     line-height:1.5rem;
     position: relative;
     border-bottom: 1px solid gray;
+    padding-left:0.5rem;
   }
   .right{
     position: absolute;
     right:0;
+    margin-top: 0.5rem;
+  }
+  .icons{
+    font-size:30px;
   }
 </style>
