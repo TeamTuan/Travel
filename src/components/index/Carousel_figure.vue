@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div class="img_banner">
     <div class="imgs row" id="a">
       <div><img src="../../assets/img/1.jpg" alt=""></div>
       <div><img src="../../assets/img/2.jpg" alt=""></div>

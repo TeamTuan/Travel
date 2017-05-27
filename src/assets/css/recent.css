@@ -1,4 +1,4 @@
-.recent{
+.recentt{
   height: 4rem;
   width: 9.7rem;
   margin-left: 0.15rem;
@@ -12,7 +12,7 @@
   line-height:0.5rem;
   color: whitesmoke;
 }
-.recent div{
+.recentt div{
   text-align: center;
   color: whitesmoke;
 }
@@ -21,14 +21,14 @@
 }
 
 
-.good{
+.goodd{
   height: 1rem;
   width: 8rem;
   margin-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.good div{
+.goodd div{
   border-radius: 30px;
   text-align: center;
   line-height: 1rem;

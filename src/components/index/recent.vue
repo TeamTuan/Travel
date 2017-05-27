@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid recent">
+    <div class="container-fluid recentt">
       <div class="row list1">
         最近访问
       </div>
@@ -42,7 +42,7 @@
     </div>
 
 
-    <div class="row good">
+    <div class="row goodd">
       <div class="col-xs-4">
         <goods>
           <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style="font-size: 25px;" slot="icon"></span>
