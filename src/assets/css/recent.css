@@ -8,7 +8,7 @@
 .list1{
   text-align: center;
   height: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   line-height:0.5rem;
   color: whitesmoke;
 }
@@ -19,18 +19,21 @@
 .list3{
   margin-top: 0.5rem;
 }
-.recent2{
+
+
+.good{
   height: 1rem;
+  width: 8rem;
+  margin-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  width: 8rem;
 }
-.name div{
-  height: 1rem;
+.good div{
+  border-radius: 30px;
   text-align: center;
   line-height: 1rem;
-  background: #98A2AE;
-  border-radius: 30px;
-  color:white;
+  height: 100%;
+  background: lightgray;
 }
+
 
