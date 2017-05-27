@@ -26,5 +26,30 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  @import "../../assets/css/search.css";
+  .search{
+    height: 1.33rem;
+    padding: 0.13rem;
+  }
+  .index{
+    border-radius: 10px;
+    border: 1px solid gray;
+    height: 100%;
+  }
+  .index div{
+    height: 100%;
+    padding: 0;
+  }
+  .icon{
+    height: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+  .search-value{
+    height: 100%;
+    border: 0;
+    width: 100%;
+    text-indent: 10px;
+    outline: none;
+  }
+
 </style>

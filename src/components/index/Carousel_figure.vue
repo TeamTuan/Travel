@@ -27,5 +27,34 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  @import "../../assets/css/carousel_figure.css";
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .row{
+    margin: 0;
+    padding: 0;
+  }
+  .img_banner{
+    height: 5.2rem;
+    width: 100%;
+    background: gray;
+  }
+  .imgs{
+    height: 5.2rem;
+    width: 100%;
+    position: relative;
+  }
+  .imgs div{
+    height: 5.2rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .imgs img{
+    height: 5.2rem;
+    width: 100%;
+  }
+
 </style>

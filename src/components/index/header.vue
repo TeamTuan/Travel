@@ -1,7 +1,6 @@
 
 <template>
   <div>
-
     <div class="container-fluid headerr">
       <div class="row nav">
 
@@ -42,5 +41,39 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  @import "../../assets/css/header.css";
+  .headerr{
+    margin: 0;
+    padding: 0;
+    height: 1.73rem;
+    width: 100%;
+  }
+  .nav{
+    background: #11bf79;
+  }
+  .menu{
+    height: 1.73rem;
+    width: 100%;
+    margin: 0;
+  }
+  .menu li{
+    height: 1.73rem;
+    float: left;
+    line-height: 1.73rem;
+    text-align: center;
+    margin-left: 0.53rem;
+  }
+  .menu a{
+    color:white;
+    font-size: 30px;
+  }
+  .user{
+    height: 1.73rem;
+  }
+  .user img{
+    height: 1.06rem;
+    width: 80%;
+    margin-top: 0.33rem;
+  }
+
+
 </style>

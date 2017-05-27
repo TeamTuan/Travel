@@ -1,20 +1,20 @@
 <template>
   <div>
     <div class="container-fluid recentt">
-      <div class="row list1">
+      <div class="list1">
         最近访问
       </div>
-      <div class="row list1">
+      <div class="list1">
         东京
       </div>
-      <div class="row list3">
+      <div class="list3">
         <div class="col-xs-3">
         <span class="glyphicon glyphicon-cutlery" aria-hidden="true"
               style="font-size: 35px;">
 
         </span>
         <div>景点美食</div>
-      </div>
+        </div>
 
         <div class="col-xs-3">
         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"
@@ -42,7 +42,7 @@
     </div>
 
 
-    <div class="row goodd">
+    <div class="goodd">
       <div class="col-xs-4">
         <goods>
           <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style="font-size: 25px;" slot="icon"></span>
@@ -82,6 +82,44 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  @import "../../assets/css/recent.css";
+  .recentt{
+    height: 4rem;
+    width: 9.7rem;
+    margin-left: 0.15rem;
+    background: #11bf79;
+    border-radius: 7px;
+  }
+  .list1{
+    text-align: center;
+    height: 0.5rem;
+    margin-top: 0.3rem;
+    line-height:0.5rem;
+    color: whitesmoke;
+  }
+  .recentt div{
+    text-align: center;
+    color: whitesmoke;
+  }
+  .list3{
+    margin-top: 0.5rem;
+  }
+
+  .goodd{
+    height: 1rem;
+    width: 8rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .goodd div{
+    border-radius: 30px;
+    text-align: center;
+    line-height: 1rem;
+    height: 100%;
+    background: lightgray;
+  }
+
+
+
 
 </style>
