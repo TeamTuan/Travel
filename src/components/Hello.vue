@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import commonHeader from "./header";
+import commonHeader from "./index/header";
 export default {
   name: 'hello',
   data () {
