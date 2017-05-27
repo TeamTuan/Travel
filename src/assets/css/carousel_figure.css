@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.row{
+  margin: 0;
+  padding: 0;
+}
+.banner{
+  height: 5.2rem;
+  width: 100%;
+  background: gray;
+}
+.imgs{
+  height: 5.2rem;
+  width: 100%;
+  position: relative;
+}
+.imgs div{
+  height: 5.2rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.imgs img{
+  height: 5.2rem;
+  width: 100%;
+}
