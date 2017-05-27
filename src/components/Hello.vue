@@ -1,9 +1,11 @@
 <template>
     <commonHeader></commonHeader>
+    <commonRegister></commonRegister>
 </template>
 
 <script>
-import commonHeader from "./index/header";
+import commonHeader from "./header";
+import commonRegister from "./login";
 export default {
   name: 'hello',
   data () {
