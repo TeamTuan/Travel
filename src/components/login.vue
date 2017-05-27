@@ -69,4 +69,5 @@
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/common.css";
   @import "../assets/css/login.css";
+  @import "../assets/lib/bootstrap/css";
 </style>
