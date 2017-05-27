@@ -1,7 +1,7 @@
 <template>
   <div>
     <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-      <div class="col-xs-1"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
+      <div class="col-xs-1"><router-link ></router-link><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
       <div class="col-xs-3"><span>设置</span></div>
     </div>
     <div class="row title">个人设置</div>
