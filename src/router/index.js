@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'login',
-      component: login
+      component: index
     }
     ,{
       path: '/setting',
