@@ -21,24 +21,13 @@
   </div>
 </template>
 <script>
-  import $ from 'jquery';
+
   export default {
-    data:function () {
-      return {
-        timer:""
-      }
-    },
-    methods:{
 
-    },
-    components:{
-
-    }
   }
 </script>
 <style>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/register.css";
   @import "../assets/css/common.css";
-  @import "../assets/lib/bootstrap/css";
 </style>
