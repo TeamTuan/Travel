@@ -3,38 +3,39 @@
 
         <div class="travel-notes">
             <div class="a_header">
-                    <div><a class="arrows" href=""><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a></div>
+              <router-link to="/user" style="color: white;"><div><span class="arrows"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></span></div></router-link>
+
                     <div class="col-xs-8"><h2>我的游记</h2></div>
-                </div>
-            <div class="nav" >
-            <div class="row">
-              <div class="col-xs-8">
-                <img src="../assets/img/xianggang.jpg">
-                <h2>香港</h2>
-              </div>
-              <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
-                                                                          aria-hidden="true"></span></a></div>
             </div>
+            <div class="nav my_nav" >
 
+                <div class="row my_row">
 
-
-
-              <div class="row">
-                <div class="col-xs-8">
-                  <img src="../assets/img/harbin.jpg">
-                  <h2>哈尔滨</h2>
+                  <div class="col-xs-8">
+                    <img src="../assets/img/xianggang.jpg">
+                    <h2>香港</h2>
+                  </div>
+                  <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
+                                                                              aria-hidden="true"></span></a></div>
                 </div>
-                <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
-                                                                            aria-hidden="true"></span></a></div>
-              </div>
 
+                <div class="row my_row">
+                  <div class="col-xs-8">
+                    <img src="../assets/img/harbin.jpg">
+                    <h2>哈尔滨</h2>
+                  </div>
+                  <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
+                                                                              aria-hidden="true"></span></a></div>
+                </div>
 
             </div>
-            <div class="footer">
-                <a href="Hello.vue">
-                    <span class="glyphicon glyphicon-plus"
-                          aria-hidden="true"></span>
-                </a>
+            <div class="footer_add">
+                <router-link to="/search">
+                  <span class="glyphicon glyphicon-plus"
+                        aria-hidden="true"></span>
+                </router-link>
+
+
 
 
             </div>

@@ -8,8 +8,8 @@
       <div class="search"><div class="col-xs-8"><input type="text" name="search" size="45" style="width:400px; height:70px; border-radius: 10px; font-size:33px;" id="search" placeholder="搜索国家或景点"></div></div>
     </div>
 
-    <div class="nav" >
-<div class="row">
+    <div class="my_nav" >
+<div class="row my_row">
   <div class="col-xs-8">
     <img src="../assets/img/xianggang.jpg">
     <h2>香港</h2>
@@ -24,7 +24,7 @@
 
 
 
-<div class="row">
+<div class="row my_row">
   <div class="col-xs-8">
     <img src="../assets/img/harbin.jpg">
     <h2>哈尔滨</h2>

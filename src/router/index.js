@@ -5,6 +5,8 @@ import setting from '@/components/setting'
 import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
 import change_user from '@/components/change_user'
+import travel_notes from '@/components/travel-notes'
+import child from '@/components/login'
 
 Vue.use(Router)
 
@@ -34,7 +36,16 @@ export default new Router({
       path: '/change_user',
       name: 'change_user',
       component: change_user
+    },
+    {
+      path: '/travel_notes',
+      name: 'travel_notes',
+      component: travel_notes
+    },
+    {
+      path: '/child',
+      name: 'child',
+      component: child
     }
-
   ]
 })

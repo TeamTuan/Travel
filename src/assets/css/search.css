@@ -16,16 +16,16 @@
   font-size: 0.7rem;
   margin-left: 0.66rem ;
 }
-.nav{
+.my_nav{
   margin-top: 0.26rem;
 }
-.nav li{
+.my_nav li{
   padding :0.4rem;
   border-bottom: 1px;
   /*padding:30px;*/
   /*border-bottom: 1px solid #c5c5c5;*/
 }
-.nav img{
+.my_nav img{
   height: 3.3rem;
   width: 4rem;
   float: left;
@@ -35,15 +35,15 @@
   top: 32px;
   left: 140px;
 }
-.nav h2{
+.my_nav h2{
   font-size: 0.46rem;
   margin-left: 0.46rem;
 }
-.row{
+.my_row{
   padding: 0.1rem;
   border-bottom: 1px solid #c5c5c5;
 }
-.nav span{
+.my_nav span{
   font-size: 0.73rem;
   line-height: 1.9rem;
 

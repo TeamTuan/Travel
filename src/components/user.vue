@@ -6,7 +6,6 @@
           <div class="row row2" style="margin-top: 0.5rem;">
             <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true" style="font-size:35px;"></span>
             <router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
-
           </div>
 
         </div>
@@ -65,11 +64,13 @@
         </div>
       </div>
       <div class="banner2">
-        <div class="row list">
+        <router-link to="/travel_notes" style="color: #2c3e50;"><div class="row list">
           <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
           <span>我的游记</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
-        </div>
+        </div></router-link>
+
+
         <div class="row list">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
           <span>等我评价的目的地</span>

@@ -17,7 +17,7 @@
   font-size: 0.7rem;
   margin-left: 0.66rem ;
 }
-.nav{
+.my_nav{
   margin-top: 0.26rem;
 }
 /*.nav li{*/
@@ -25,32 +25,32 @@
   /*border-bottom: 1px;*/
 
 /*}*/
-.nav img{
+.my_nav img{
   height: 3.3rem;
   width: 4rem;
   float: left;
 }
-.nav h2{
+.my_nav h2{
 font-size: 0.46rem;
   margin-left: 0.46rem;
 }
-.nav span{
+.my_nav span{
   font-size: 0.73rem;
   line-height: 1.9rem;
 
 }
-.row{
+.my_row{
   padding: 0.1rem;
   border-bottom: 1px solid #c5c5c5;
 }
-.footer{
+.footer_add{
   font-size:1.4rem;
   position:absolute;
   right: 0.4rem;
   bottom:0.26rem;
 }
 
-.footer span{
+.footer_add span{
   color: green;
 
 }

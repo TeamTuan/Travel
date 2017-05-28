@@ -2,7 +2,7 @@
   <div class="child-place">
     <div class="navbar navbar-default navbar-fixed-top h-search">
       <form class="search">
-        <spanc class="glyphicon glyphicon-search"></spanc>
+        <span class="glyphicon glyphicon-search"></span>
         <input type="text" placeholder="东京"/>
         <span>取消</span>
       </form>
@@ -265,6 +265,9 @@
     </div>
   </div>
 </template>
+<script>
+  export default{}
+</script>
 <style>
   @import "../assets/css/child_place.css";
   @import "../assets/lib/bootstrap/css/bootstrap.css";
