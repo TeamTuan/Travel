@@ -33,9 +33,6 @@ import "../../assets/js/top.js";
 
 
 <style>
-body{
-  height: 3000px;
-}
   .new_search{
     background: #11bf79;
   }
