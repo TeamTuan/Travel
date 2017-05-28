@@ -11,24 +11,27 @@
 
                 <div class="row my_row">
 
-                  <div class="col-xs-8">
+                  <div class="col-xs-9">
                     <img src="../assets/img/xianggang.jpg">
                     <h2>香港</h2>
                   </div>
-                  <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
+                  <div class="col-xs-2"><a href=""><span class="glyphicon glyphicon-pencil"
+                                                                              aria-hidden="true"></span></a></div>
+                  <div class="col-xs-1"><a href=""><span class="glyphicon glyphicon-remove"
                                                                               aria-hidden="true"></span></a></div>
                 </div>
 
                 <div class="row my_row">
-                  <div class="col-xs-8">
+                  <div class="col-xs-9">
                     <img src="../assets/img/harbin.jpg">
                     <h2>哈尔滨</h2>
                   </div>
-                  <div class="col-xs-2 user col-xs-offset-2"><a href=""><span class="glyphicon glyphicon-pencil"
+                  <div class="col-xs-2"><a href=""><span class="glyphicon glyphicon-pencil"
                                                                               aria-hidden="true"></span></a></div>
-                </div>
+                  <div class="col-xs-1"><a href=""><span class="glyphicon glyphicon-remove"
+                                                         aria-hidden="true"></span></a></div></div>
 
-            </div>
+                </div>
             <div class="footer_add">
                 <router-link to="/search">
                   <span class="glyphicon glyphicon-plus"

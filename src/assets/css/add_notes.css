@@ -1,0 +1,25 @@
+.header div{
+  height: 100%;
+}
+.header span{
+  height: 100%;
+  text-align: center;
+  line-height:1.5rem;
+  color:white;
+}
+
+.my_footer{
+  font-size: 50px;
+  line-height: 300px;
+  text-align: center;
+}
+.my_footer span{
+
+}
+.img_border{
+  margin-left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #000000;
+
+}
