@@ -51,5 +51,8 @@
     text-indent: 10px;
     outline: none;
   }
+  .icon{
+    background: white;
+  }
 
 </style>

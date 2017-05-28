@@ -47,7 +47,6 @@
 </template>
 <script>
   import $ from 'jquery';
-  import banner from './Carousel_figure.vue';
   export default {
     data:function () {
       return {
