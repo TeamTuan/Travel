@@ -6,7 +6,6 @@ $(function () {
     if(stop>=height-nav_fix){
       $(".m_search").addClass("navbar-fixed-top");
       $(".m_search").addClass("new_search");
-      console.log(nav_fix);
       $(".m_search").css("marginTop",nav_fix);
     }else if(stop<height-nav_fix){
       $(".m_search").removeClass("navbar-fixed-top");

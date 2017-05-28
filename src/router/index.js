@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/login'
+import Hello from '@/components/index/index'
 
 Vue.use(Router)
 
@@ -11,8 +11,5 @@ export default new Router({
       name: 'Hello',
       component: Hello
     }
-
-
-
   ]
 })

@@ -6,6 +6,7 @@
     <recent></recent>
     <banner2></banner2>
     <now_go></now_go>
+    <blog></blog>
   </div>
 
 </template>
@@ -17,13 +18,14 @@ import search from "./search.vue";
 import recent from "./recent.vue";
 import banner2 from "./Carousel_figure2.vue";
 import now_go from "./now_go.vue";
+import blog from "./blog.vue";
 
 import "../../assets/js/jquery-3.2.1.min";
 import "../../assets/js/top.js";
 
   export default {
     components:{
-      commonheader,banner,search,recent,banner2,now_go
+      commonheader,banner,search,recent,banner2,now_go,blog
     }
   }
 </script>
