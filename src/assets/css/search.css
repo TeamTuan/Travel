@@ -1,0 +1,48 @@
+.header{
+  height: 130px;
+  width: 100%;
+  background: #11bf79;
+}
+.header h2{
+  font-size: 55px;
+  margin-left: 85px;
+  color: #ffffff;
+  line-height: 100px;
+}
+.arrows{
+  float: left;
+  line-height: 145px;
+  color: #ffffff;
+  font-size: 55px;
+  margin-left: 50px ;
+}
+.nav{
+  margin-top: 20px;
+}
+.nav li{
+  padding :30px;
+  border-bottom: 1px;
+  /*padding:30px;*/
+  /*border-bottom: 1px solid #c5c5c5;*/
+}
+.nav img{
+  height: 250px;
+  width: 300px;
+  float: left;
+}
+.search{
+ position: absolute;
+  top: 32px;
+  left: 140px;
+}
+.nav span{
+  font-size: 55px;
+  line-height: 145px;
+
+}
+.footer{
+  font-size: 105px;
+  position:absolute;
+  right:30px;
+  bottom:20px
+}
