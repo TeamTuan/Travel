@@ -4,16 +4,18 @@
     <div class="container-fluid headerr">
       <div class="row nav">
 
-        <div class="col-xs-8">
-          <ul class="menu">
-            <li><a href="">首页</a></li>
-            <li><a href="">目的地</a></li>
-            <li><a href="">商城</a></li>
-            <li><a href="">社区</a></li>
+        <div class="col-xs-10">
+          <ul class="menu row" style="padding: 0;">
+            <div class="col-xs-3">首页</div>
+            <div class="col-xs-3">目的地</div>
+            <div class="col-xs-3">商城</div>
+            <div class="col-xs-3">社区</div>
           </ul>
         </div>
 
-        <div class="col-xs-2 user col-xs-offset-2"><img src="../../assets/img/user.png" alt=""></div>
+        <div class="col-xs-2 user_icon col-xs-offset-2">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </div>
 
       </div>
     </div>
@@ -44,35 +46,39 @@
   .headerr{
     margin: 0;
     padding: 0;
-    height: 1.73rem;
+    height: 1.6rem;
     width: 100%;
   }
   .nav{
+    height: 1.6rem;
     background: #11bf79;
   }
+  .nav div{
+    height: 100%;
+  }
   .menu{
-    height: 1.73rem;
+    height: 1.6rem;
     width: 100%;
     margin: 0;
   }
-  .menu li{
-    height: 1.73rem;
+  .menu div{
+    height: 1.6rem;
     float: left;
-    line-height: 1.73rem;
+    line-height: 1.6rem;
     text-align: center;
-    margin-left: 0.53rem;
+    color: white;
+    padding: 0;
   }
   .menu a{
     color:white;
     font-size: 30px;
   }
-  .user{
-    height: 1.73rem;
-  }
-  .user img{
-    height: 1.06rem;
-    width: 80%;
-    margin-top: 0.33rem;
+  .user_icon{
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.6rem;
+    color:white;
+    margin: 0;
   }
 
 

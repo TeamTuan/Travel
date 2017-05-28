@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid search">
-    <div class="index row">
+    <div class="index row" style="padding: 0;">
       <div class="col-xs-1 icon">
         <span class="glyphicon glyphicon-search" aria-hidden="true"
         style="font-size: 35px;"></span>
@@ -12,7 +12,6 @@
         <span class="glyphicon glyphicon-qrcode" aria-hidden="true"
         style="font-size: 35px;"></span>
       </div>
-
     </div>
   </div>
 </template>
@@ -43,6 +42,7 @@
     height: 1rem;
     text-align: center;
     line-height: 1.2rem;
+    background: white;
   }
   .search-value{
     height: 100%;
