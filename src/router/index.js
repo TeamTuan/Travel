@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import login from '@/components/index/index'
+import index from '@/components/index/index'
+import login from '@/components/user'
 import setting from '@/components/setting'
 Vue.use(Router)
 
@@ -9,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'login',
-      component: login
+      component: index
     }
     ,{
       path: '/setting',

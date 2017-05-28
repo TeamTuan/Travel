@@ -1,5 +1,5 @@
 <template>
-  <div class="banner2">
+  <div class="bannerr2">
 
   </div>
 
@@ -14,7 +14,7 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  .banner2{
+  .bannerr2{
     height: 3rem;
     background: #000;
   }
