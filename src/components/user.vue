@@ -5,7 +5,7 @@
         <div class="col-xs-3 col-xs-offset-9" style="height: 100%;">
           <div class="row row2" style="margin-top: 0.5rem;">
             <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true" style="font-size:35px;"></span>
-            <router-link to="/setting/" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
+            <router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
 
           </div>
 
