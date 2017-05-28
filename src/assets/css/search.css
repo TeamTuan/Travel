@@ -1,48 +1,52 @@
-.header{
-  height: 130px;
+.b_header{
+  height: 1.7rem;
   width: 100%;
   background: #11bf79;
 }
-.header h2{
-  font-size: 55px;
-  margin-left: 85px;
+.b_header h2{
+  font-size: 0.73rem;
+  margin-left: 1.1rem;
   color: #ffffff;
-  line-height: 100px;
+  line-height: 1.3rem;
 }
 .arrows{
   float: left;
-  line-height: 145px;
+  line-height: 1.9rem;
   color: #ffffff;
-  font-size: 55px;
-  margin-left: 50px ;
+  font-size: 0.7rem;
+  margin-left: 0.66rem ;
 }
 .nav{
-  margin-top: 20px;
+  margin-top: 0.26rem;
 }
 .nav li{
-  padding :30px;
+  padding :0.4rem;
   border-bottom: 1px;
   /*padding:30px;*/
   /*border-bottom: 1px solid #c5c5c5;*/
 }
 .nav img{
-  height: 250px;
-  width: 300px;
+  height: 3.3rem;
+  width: 4rem;
   float: left;
 }
 .search{
- position: absolute;
+  position: absolute;
   top: 32px;
   left: 140px;
 }
+.nav h2{
+  font-size: 0.46rem;
+  margin-left: 0.46rem;
+}
+.row{
+  padding: 0.1rem;
+  border-bottom: 1px solid #c5c5c5;
+}
 .nav span{
-  font-size: 55px;
-  line-height: 145px;
+  font-size: 0.73rem;
+  line-height: 1.9rem;
 
 }
-.footer{
-  font-size: 105px;
-  position:absolute;
-  right:30px;
-  bottom:20px
-}
+
+
