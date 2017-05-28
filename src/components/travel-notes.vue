@@ -62,5 +62,4 @@
 <style src="../assets/css/travel-notes.css" scoped>
     @import "../assets/lib/bootstrap/css/bootstrap.css";
     @import "../assets/css/common.css";
-
 </style>
