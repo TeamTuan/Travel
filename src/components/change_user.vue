@@ -28,9 +28,6 @@
         <div class="col-xs-3"></div>
         <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
     </div>
-    <div class="row footer">
-      退出当前帐号
-    </div>
   </div>
 </template>
 <script>
@@ -67,7 +64,7 @@
     border-bottom: 1px solid #d8d8d8;
   }
   .bannerlist{
-    height: 15.2rem;
+    height: 16.3rem;
     background: #d8d8d8;
     padding: 0;
     margin:0;
