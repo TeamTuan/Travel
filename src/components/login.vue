@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="container" style="height:2000px;
+  background: #40c896;">
     <div class="nav">
       <div class="row row1_">
         <div class="col-xs-9">
@@ -26,7 +27,10 @@
       <u><p>忘记密码?</p></u>
     </div>
     <div class="row row6_">
-      <input type="text" value="登录" class="col-xs-3">
+      <input type="text" value="登录" class="col-xs-3" style="color:#6eba9e;
+  margin-left:3.7rem;
+  margin-top:0.2rem;
+  text-align:center;">
     </div>
     <div class="row row7_">
       <u><p>手机号登录</p></u>
@@ -54,8 +58,9 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/common.css";
   @import "../assets/css/login.css";
+
 </style>
