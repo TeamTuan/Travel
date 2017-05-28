@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/travel-notes'
+import Hello from '@/components/index/index'
 import setting from '@/components/setting'
 import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
 import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
 import child from '@/components/login'
+import add_notes from '@/components/add_notes'
 
 Vue.use(Router)
 
@@ -46,6 +47,12 @@ export default new Router({
       path: '/child',
       name: 'child',
       component: child
+    }
+    ,
+    {
+      path: '/add_notes',
+      name: 'add_notes',
+      component: add_notes
     }
   ]
 })

@@ -1,8 +1,8 @@
 <template>
 <div>
   <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-    <div class="col-xs-1"><router-link to="/user"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
-    <div class="col-xs-10"><span>设置</span></div>
+    <div class="col-xs-1"><router-link to="/travel_notes"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
+    <div class="col-xs-10"><span>我的游记</span></div>
     <div class="col-xs-1"><span class="glyphicon glyphicon-ok"  style="font-size:30px;" aria-hidden="true"></span></div>
   </div>
   <div class="row my_row">
