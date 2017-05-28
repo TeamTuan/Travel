@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import "../../assets/js/zepto.min.js";
+  import "../../assets/js/jquery-3.2.1.min";
   import "../../assets/js/Carousel_figure.js";
   export default {}
 </script>
@@ -27,6 +27,7 @@
 <style>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
+  @import "../../assets/css/swiper-3.4.2.min.css";
   *{
     padding: 0;
     margin: 0;

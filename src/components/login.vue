@@ -48,19 +48,8 @@
   </div>
 </template>
 <script>
-  import $ from 'jquery';
   export default {
-    data:function () {
-      return {
-        timer:""
-      }
-    },
-    methods:{
 
-    },
-    components:{
-
-    }
   }
 </script>
 
@@ -69,5 +58,4 @@
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/common.css";
   @import "../assets/css/login.css";
-  @import "../assets/lib/bootstrap/css";
 </style>
