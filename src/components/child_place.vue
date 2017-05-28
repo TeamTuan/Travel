@@ -194,9 +194,9 @@
         <br><hr />
       </div>
       <div class="c-p-xx-list">
-        <div class="c-p-xx-1">
+        <div class="c-jd c-p-xx-1">
           <div class="c-p-xx-img">
-            <img src="../assets/img/child-place/p-jn-jiud.png">
+            <img class="jd-img" src="../assets/img/child-place/p-jn-jiud.png">
           </div>
           <div class="c-p-xx-js">
             <div class="jd-pos">
@@ -215,9 +215,9 @@
           </div>
           <br><hr>
         </div>
-        <div class="c-p-xx-1">
+        <div class="c-jd c-p-xx-1">
           <div class="c-p-xx-img">
-            <img src="../assets/img/child-place/p-jd2.png">
+            <img class="jd-img" src="../assets/img/child-place/p-jd2.png">
           </div>
           <div class="c-p-xx-js">
             <div class="jd-pos">
@@ -238,9 +238,9 @@
           </div>
           <br><hr>
         </div>
-        <div class="c-p-xx-1">
+        <div class="c-jd c-p-xx-1">
           <div class="c-p-xx-img">
-            <img src="../assets/img/child-place/p-jd3.png">
+            <img class="jd-img" src="../assets/img/child-place/p-jd3.png">
           </div>
           <div class="c-p-xx-js">
             <div class="jd-pos">

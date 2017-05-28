@@ -139,14 +139,14 @@ a{
   color: #11bf79;
 }
 .c-p-xx-js .jd-pos{
-  height: 1.4rem;
+  height: 1.5rem;
 }
 .c-p-xx-js .jd-dengji{
-  height: 0.5rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
 }
 .c-p-header .c-p-h-icon{
   float: right;
-  margin-right: 2%;
 }
 .c-p-header .c-p-h-icon img{
   height: 0.7rem;
@@ -154,4 +154,10 @@ a{
 }
 .jd-city .jd-pri{
   right: 2%;
+}
+.c-p-xx-img .jd-img{
+  height: 2.5rem;
+}
+.c-jd hr{
+  margin-top: 28%;
 }

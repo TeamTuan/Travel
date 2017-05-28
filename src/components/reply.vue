@@ -25,7 +25,7 @@
         <span class="glyphicon glyphicon-thumbs-up"></span>
         <span>不容错过</span>
       </div>
-      <div class="col-sm-3 jingdian1">
+      <span class="col-sm-3 jingdian1">
         <img src="../assets/img/reply/jingdian1.jpg">
         <div class="jd-name">
           浅草寺
@@ -34,8 +34,8 @@
           <img src="../assets/img/reply/jd-dengji.png">
           <span>8.3分</span>
         </div>
-      </div>
-      <div class="col-sm-3 jingdian1">
+      </span>
+      <span class="col-sm-3 jingdian2">
         <img src="../assets/img/child-place/c-p-picture.jpg">
         <div class="jd-name">
           东京塔
@@ -44,8 +44,8 @@
           <img src="../assets/img/reply/jd-dengji.png">
           <span>8.9分</span>
         </div>
-      </div>
-      <div class="col-sm-3 jingdian1">
+      </span>
+      <span class="col-sm-3 jingdian3">
         <img src="../assets/img/reply/jingdian2.jpg">
         <div class="jd-name">
           涩谷区
@@ -54,8 +54,8 @@
           <img src="../assets/img/reply/jd-dengji.png">
           <span>8.5分</span>
         </div>
-      </div>
-      <div class="col-sm-3 jingdian1">
+      </span>
+      <span class="col-sm-3 jingdian4">
         <img src="../assets/img/reply/jingdian4.jpg">
         <div class="jd-name">
           新宿区歌舞伎
@@ -64,7 +64,7 @@
           <img src="../assets/img/reply/jd-dengji.png">
           <span>8.1分</span>
         </div>
-      </div>
+      </span>
       <br>
       <hr>
     </div>

@@ -15,9 +15,9 @@ a{
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  position: relative;
 }
 .r-p-header .col-xs-4{
-  margin-left: 2%;
   margin-top: 2%;
 }
 .r-p-header .col-xs-4 img{
@@ -27,11 +27,12 @@ a{
 .r-p-header .glyphicon-plus{
   font-size: 0.5rem;
   color: #fff;
+  left: 1.7rem;
 }
 .r-p-header .glyphicon-search{
   font-size: 0.5rem;
   color: #fff;
-  margin-right: 20%;
+  left: 1.1rem;
 }
 .r-p-header .r-place{
   margin-left: 10%;
@@ -41,8 +42,8 @@ a{
 }
 .r-p-header .col-xs-2{
   float: right;
-  margin-right: 2%;
   margin-top: 4%;
+  position: absolute;
 }
 .r-p-body-img{
   height: 6rem;
@@ -61,9 +62,6 @@ a{
 .r-p-shoucang hr{
   width: 98%;
 }
-.jingdian{
-  height: 6rem;
-}
 .r-jd-header{
   height: 1.2rem;
 }
@@ -71,28 +69,49 @@ a{
   font-size: 1.7em;
   margin-left: 2%;
 }
-.jingdian .jingdian1{
+.jingdian {
+  height: 6rem;
+  position: relative;
+}
+.jingdian .col-sm-3 {
   height: 4.5rem;
   overflow: hidden;
+  position: absolute;
+  width: 25%;
 }
-.jingdian .jingdian1 img{
+.jingdian .col-sm-3  img{
+  height: 2.5rem;
   width: 100%;
-  height: 2.7rem;
 }
-.jingdian1 .jd-name{
+.jingdian .jingdian1{
+  left: 0;
+}
+.jingdian .jingdian2{
+  left: 25%;
+}
+.jingdian .jingdian3{
+  left: 50%;
+}
+.jingdian .jingdian4{
+  left: 75%;
+}
+.jingdian .col-sm-3 .jd-name{
   margin-top: 1%;
   font-size: 1.1em;
+  height: 1rem;
 }
-.jingdian1 .r-jd-dengji span{
+.jingdian .col-sm-3 .r-jd-dengji span{
   font-size: 1.1em;
   margin-left: 1%;
 }
-.jingdian1 .r-jd-dengji img{
+.jingdian .col-sm-3 .r-jd-dengji img{
   width: 80%;
   height: 0.3rem;
 }
 .jingdian hr{
   width: 98%;
+  position: absolute;
+  top: 6rem;
 }
 .r-p-youji .r-yj-header{
   height: 1.2rem;
