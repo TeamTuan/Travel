@@ -99,7 +99,7 @@
 
 export default{};
 </script>
-<style>
+<style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   body{
     margin: 0;
