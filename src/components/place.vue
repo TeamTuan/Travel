@@ -54,7 +54,6 @@
 
 </template>
 <script>
-  import $ from 'jquery';
   export default {
     data:function () {
       return {
@@ -68,11 +67,8 @@
 
     components:{}
   }
-  $('.his-clean').click(function(){
-    $('.histroy').hide();
-  });
 </script>
-<style>
-  @import "../assets/css/place.css";
-  @import "../assets/lib/bootstrap/css/bootstrap.css";
-</style>
+<style src="../assets/css/place.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.min.css" scoped></style>

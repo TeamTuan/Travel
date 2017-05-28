@@ -95,7 +95,6 @@
               1436人去过
             </div>
           </div>
-          </a>
           <br><hr>
         </div>
       </div>
@@ -121,12 +120,8 @@
             <div>
               亚洲/日本
             </div>
-            <div>
               <br>
-            </div>
-            <div>
               <br>
-            </div>
             <div>
               2017-05-17更新
             </div>
@@ -144,12 +139,8 @@
             <div>
               亚洲/日本
             </div>
-            <div>
               <br>
-            </div>
-            <div>
               <br>
-            </div>
             <div>
               2016-09-08更新
             </div>
@@ -167,12 +158,8 @@
             <div>
               亚洲/日本
             </div>
-            <div>
               <br>
-            </div>
-            <div>
               <br>
-            </div>
             <div>
               2016-09-29更新
             </div>
@@ -268,9 +255,7 @@
 <script>
   export default{}
 </script>
-<style>
-  @import "../assets/css/child_place.css";
-  @import "../assets/lib/bootstrap/css/bootstrap.css";
-  @import "../assets/lib/bootstrap/css/bootstrap-theme.css";
-  @import "../assets/lib/bootstrap/css/bootstrap-theme.min.css";
-</style>
+<style src="../assets/css/child_place.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.min.css" scoped></style>
