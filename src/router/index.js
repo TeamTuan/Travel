@@ -5,6 +5,8 @@ import setting from '@/components/setting'
 import user_name from '@/components/user_name'
 import tel_pass_manage from '@/components/tel_pass_manage'
 import change_user from '@/components/change_user'
+import login from '@/components/login'
+import register from '@/components/register'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +35,16 @@ export default new Router({
       path: '/change_user',
       name: 'change_user',
       component: change_user
+    }
+    ,{
+      path: 'login',
+      name: 'login',
+      component: login
+    }
+    ,{
+      path: 'register',
+      name: 'register',
+      component: register
     }
 
   ]
