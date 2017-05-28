@@ -1,36 +1,41 @@
 <template>
   <div>
     <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-      <div class="col-xs-1"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
+      <div class="col-xs-1"><router-link to="/user"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
       <div class="col-xs-3"><span>设置</span></div>
     </div>
     <div class="row title">个人设置</div>
     <div class="bannerr">
-      <div class="row">
-        <div class="col-xs-2">
-          <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+      <router-link to="/tel_pass_manage"  style="color:#2c3e50;">
+        <div class="row">
+          <div class="col-xs-2">
+            <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+          </div>
+          <div class="col-xs-7">
+            <span>账号密码</span>
+          </div>
+          <div class="col-xs-2">
+            <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle">
+          </div>
+          <div class="col-xs-1">
+            <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="col-xs-7">
-          <span>账号密码</span>
+      </router-link>
+      <router-link to="/change_user" style="color:#2c3e50;">
+        <div class="row">
+          <div class="col-xs-2">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </div>
+          <div class="col-xs-9">
+            <span>个人信息</span>
+          </div>
+          <div class="col-xs-1">
+            <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="col-xs-2">
-          <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle">
-        </div>
-        <div class="col-xs-1">
-          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-2">
-          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-        </div>
-        <div class="col-xs-9">
-          <span>个人信息</span>
-        </div>
-        <div class="col-xs-1">
-          <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
-        </div>
-      </div>
+      </router-link>
+
       <div class="row">
         <div class="col-xs-2">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>

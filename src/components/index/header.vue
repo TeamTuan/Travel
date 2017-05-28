@@ -14,7 +14,7 @@
         </div>
 
         <div class="col-xs-2 user_icon col-xs-offset-2">
-          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          <router-link to="/user" style="color: white;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></router-link>
         </div>
 
       </div>

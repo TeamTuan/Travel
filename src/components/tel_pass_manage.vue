@@ -1,7 +1,7 @@
 <template>
  <div class="all">
    <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-     <div class="col-xs-1"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
+     <div class="col-xs-1"><router-link to="/setting" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
      <div class="col-xs-3"><span>账号管理</span></div>
    </div>
    <div class="row bannerlist" style="padding: 0;margin: 0;">
