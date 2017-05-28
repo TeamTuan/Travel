@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.child-place{
+  min-width: 320px;
+  max-width: 1024px;
+  background: #fff;
+}
+.h-search{
+  height: 1.5rem;
+  color: #11bf79;
+  width: 100%;
+  float: left;
+}
+.search{
+  margin-top: 2.5%;
+  height: 1rem;
+  margin-left: 1%;
+  min-width: 320px;
+  max-width: 1024px;
+}
+.child-place .navbar-default{
+  background: #11bf79;
+}
+.search .glyphicon-search{
+  font-size: 2em;
+  margin-top: 1%;
+  margin-left: 5%;
+  color: #fff;
+}
+.search span{
+  color: #fff;
+  width: 1rem;
+  display: block;
+  height: 1rem;
+  float: right;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1rem;
+  margin-right: 2%;
+}
+.search input{
+  width: 7rem;
+  height: 1rem;
+  float: left;
+  font-size: 1.5em;
+}
+.place {
+  height: 12rem;
+  position: relative;
+  float: left;
+  margin-top: 1.5rem;
+}
+.c-p-header{
+  font-size: 1.5em;
+  float: left;
+  height: 1.2rem;
+  padding-left: 2%;
+  color: #222222;
+  width: 100%;
+}
+.c-p-header hr{
+  width: 9rem;
+  margin-top: 2%;
+  top: 5rem;
+}
+.c-p-xx-list{
+  float: left;
+  width: 9rem;
+  margin-top: 1%;
+}
+.c-p-xx-list .c-p-xx-1{
+  height: 3rem;
+  margin-left: 4%;
+  width: 9.5rem;
+}
+.c-p-xx-list .c-p-xx-1 .c-p-xx-img{
+  width: 3rem;
+  height: 2.5rem;
+  float: left;
+  display: inline-block;
+  margin-top: 3%;
+}
+.c-p-xx-img img{
+  width: 3rem;
+  height: 2rem;
+}
+.c-p-xx-1 .c-p-xx-js{
+  width: 6rem;
+  float: right;
+  font-size: 1.2em;
+  position: relative;
+  color: #222222;
+  margin-top: 3%;
+}
+.c-p-xx-1 hr{
+  width: 9rem;
+  color: #222222;
+  margin-top: 0%;
+}
+.c-p-xx-js div{
+  height: 0.4rem;
+}
+.c-p-xx-js span{
+  position: absolute;
+  height: 0.5rem;
+}
+.c-p-xx-start{
+  left: 0;
+  float: left;
+}
+.c-p-xx-start img{
+  width: 2rem;
+}
+.c-p-xx-gs{
+  float: right;
+  right: 5%;
+}
+.p-null{
+  height: 0.4rem;
+  background: #f0f0f0;
+  position: absolute;
+  top: 14rem;
+  width: 100%;
+}
+.null2{
+  top: 27rem;
+}
+.place .p-more{
+  text-align: center;
+  font-size: 1.4em;
+  position: absolute;
+  top: 11rem;
+  width: 100%;
+  color: #11bf79;
+}
+.c-p-xx-js .jd-pos{
+  height: 1.4rem;
+}
+.c-p-xx-js .jd-dengji{
+  height: 0.5rem;
+}
+.c-p-header .c-p-h-icon{
+  float: right;
+  margin-right: 2%;
+}
+.c-p-header .c-p-h-icon img{
+  height: 0.7rem;
+  width: 4rem;
+}
+.jd-city .jd-pri{
+  right: 2%;
+}
