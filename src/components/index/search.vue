@@ -23,7 +23,7 @@
 
 
 
-<style>
+<style scoped>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
   .search{

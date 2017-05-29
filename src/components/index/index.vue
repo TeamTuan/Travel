@@ -20,7 +20,7 @@ import banner2 from "./Carousel_figure2.vue";
 import now_go from "./now_go.vue";
 import blog from "./blog.vue";
 
-import "../../assets/js/jquery-3.2.1.min";
+import "../../assets/js/jquery-3.2.1.min.js";
 import "../../assets/js/top.js";
 
   export default {
@@ -32,7 +32,7 @@ import "../../assets/js/top.js";
 
 
 
-<style>
+<style scoped>
   .new_search{
     background: #11bf79;
   }

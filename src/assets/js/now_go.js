@@ -32,7 +32,6 @@ $(function () {
         if(left>=-indexcount) {
           $(".nav_list").css("left", -moveLength);
         }
-
         console.log($(".nav_list").css("left"));
       }
     };
@@ -42,13 +41,11 @@ $(function () {
     var swipeRight=function(){
       if( deltaX>30 ){
         var left=$(".nav_list").css("left").replace("px","");
+        var right_count=parseInt(left)+parseInt(moveLength);
+        console.log(parseInt(left)+moveLength);
         if(left<0){
-
+          $(".nav_list").css("left",parseInt(left)+moveLength);
         }
-        // var right_count=parseInt(left)+parseInt(moveLength);
-        // $(".nav_list").css("left",right_count);
-        console.log(moveLength);
-
       }
     };
     swipeRight();

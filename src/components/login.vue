@@ -58,9 +58,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style src="../assets/css/login.css" scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   @import "../assets/css/common.css";
-  @import "../assets/css/login.css";
-
 </style>
