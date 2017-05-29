@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="row row1__">
-      <span class="glyphicon glyphicon-arrow-left col-xs-3" aria-label="Left Align"></span>
-      <div class="col-xs-9">手机号注册</div>
+      <span class="glyphicon glyphicon-arrow-left col-xs-2" aria-hidden="true"></span>
+      <div class="col-xs-10">手机号注册</div>
     </div>
     <div class="row row2__">
       <div class="telp col-xs-4">
@@ -26,8 +26,10 @@
 
   }
 </script>
-<style>
+<style src="../assets/css/register.css" scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
-  @import "../assets/css/register.css";
-  @import "../assets/css/common.css";
+</style>
+
+<style src="../assets/css/common.css" scoped>
+
 </style>

@@ -1,8 +1,10 @@
 html,body{
-  height:2000px;
+  height:15.2rem;
+  width: 10rem;
 }
 .container{
-
+  height:15.2rem;
+  width: 10rem;
 }
 .row1_{
   color:#f5f7f2;

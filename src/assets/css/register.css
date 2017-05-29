@@ -3,19 +3,23 @@
   padding: 0;
 }
 html,body{
-  height: 2000px;
+  height: 17.8rem;
+  width:10rem;
 }
 .container{
-  height: 2000px;
+  height: 17.8rem;
+  width:10rem;
   background:#40c895;
 }
 .row1__{
   color:#f5f7f2;
-  margin-top:0.5rem;
-  font-size:0.4rem;
+  height: 1.5rem;
+  line-height:1.5rem;
+  font-size:30px;
 }
 .glyphicon-arrow-left{
-  margin-top:-0.25rem;
+ text-align:center;
+  line-height:1.5rem;
 }
 .row2__{
   color:#f5f7f2;
