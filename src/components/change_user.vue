@@ -33,7 +33,7 @@
 <script>
   export default{};
 </script>
-<style>
+<style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
   .row{
     margin:0;

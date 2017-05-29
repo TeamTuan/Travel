@@ -1,20 +1,21 @@
 
 .a_header{
-  height: 1.7rem;
+
   width: 100%;
-  background: #11bf79;
+  height:1.5rem;
+  background:#439865;
 }
 .a_header h2{
-  font-size: 0.73rem;
-  margin-left: 1.1rem;
+  font-size: 0.35rem;
+  margin-left: 0.7rem;
   color: #ffffff;
-  line-height: 1.3rem;
+  line-height: 1rem;
 }
 .arrows{
   float: left;
-  line-height: 1.9rem;
+  line-height: 1.5rem;
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   margin-left: 0.66rem ;
 }
 .my_nav{
@@ -31,7 +32,7 @@
   float: left;
 }
 .my_nav h2{
-font-size: 0.46rem;
+  font-size: 0.46rem;
   margin-left: 0.46rem;
 }
 .my_nav span{
@@ -55,6 +56,3 @@ font-size: 0.46rem;
 
 }
 
-input{
-  background: red;
-}

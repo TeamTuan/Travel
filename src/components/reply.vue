@@ -126,9 +126,11 @@
     </div>
   </div>
 </template>
-<style>
-  @import "../assets/css/reply.css";
-  @import "../assets/lib/bootstrap/css/bootstrap.css";
-  @import "../assets/lib/bootstrap/css/bootstrap-theme.css";
-  @import "../assets/lib/bootstrap/css/bootstrap-theme.min.css";
-</style>
+<script>
+  export default{}
+</script>
+<style src="../assets/css/reply.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.css" scoped></style>
+<style src="../assets/lib/bootstrap/css/bootstrap-theme.min.css" scoped></style>
+

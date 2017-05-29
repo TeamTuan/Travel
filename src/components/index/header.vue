@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="container-fluid headerr">
-      <div class="row ma_nav">
+      <div class="row nav">
 
         <div class="col-xs-10">
           <ul class="menu row" style="padding: 0;">
@@ -49,11 +49,11 @@
     height: 1.6rem;
     width: 100%;
   }
-  .ma_nav{
+  .nav{
     height: 1.6rem;
     background: #11bf79;
   }
-  .ma_nav div{
+  .nav div{
     height: 100%;
   }
   .menu{
