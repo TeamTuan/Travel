@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/index/index'
+import Hello from '@/components/register'
 import setting from '@/components/setting'
 import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
