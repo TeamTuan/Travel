@@ -15,15 +15,14 @@ import place from '@/components/place'
 import child_place from '@/components/child_place'
 import reply from '@/components/reply'
 
-
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: login
+      name: 'Hello',
+      component: Hello
     },
     {
       path: '/setting',
