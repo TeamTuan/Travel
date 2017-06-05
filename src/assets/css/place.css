@@ -141,19 +141,10 @@ ul{
   display: inline-block;
   border-radius: 45%;
   margin-left: 3%;
-  width: 2.5rem;
+  width: 100%;
   text-align: center;
   line-height: 1rem;
   margin-top: 2%;
-}
-.hot-search .h-s-place span:nth-child(1){
-  width: 4rem;
-}
-.hot-search .h-s-place span:nth-child(2){
-  width: 4rem;
-}
-.hot-search .h-s-place span:nth-child(3){
-  width: 4rem;
 }
 .hot-search .h-s-place span{
   font-size: 1.3em;

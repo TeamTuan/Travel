@@ -25,46 +25,54 @@
         <span class="glyphicon glyphicon-thumbs-up"></span>
         <span>不容错过</span>
       </div>
-      <span class="col-sm-3 jingdian1">
-        <img src="../assets/img/reply/jingdian1.jpg">
-        <div class="jd-name">
-          浅草寺
-        </div>
-        <div class="r-jd-dengji">
-          <img src="../assets/img/reply/jd-dengji.png">
-          <span>8.3分</span>
-        </div>
-      </span>
-      <span class="col-sm-3 jingdian2">
-        <img src="../assets/img/child-place/c-p-picture.jpg">
-        <div class="jd-name">
-          东京塔
-        </div>
-        <div class="r-jd-dengji">
-          <img src="../assets/img/reply/jd-dengji.png">
-          <span>8.9分</span>
-        </div>
-      </span>
-      <span class="col-sm-3 jingdian3">
-        <img src="../assets/img/reply/jingdian2.jpg">
-        <div class="jd-name">
-          涩谷区
-        </div>
-        <div class="r-jd-dengji">
-          <img src="../assets/img/reply/jd-dengji.png">
-          <span>8.5分</span>
-        </div>
-      </span>
-      <span class="col-sm-3 jingdian4">
-        <img src="../assets/img/reply/jingdian4.jpg">
-        <div class="jd-name">
-          新宿区歌舞伎
-        </div>
-        <div class="r-jd-dengji">
-          <img src="../assets/img/reply/jd-dengji.png">
-          <span>8.1分</span>
-        </div>
-      </span>
+      <router-link to="/child_place" style="text-decoration: none; color: #222222">
+        <span class="col-sm-3 jingdian1">
+          <img src="../assets/img/reply/jingdian1.jpg">
+          <div class="jd-name">
+            浅草寺
+          </div>
+          <div class="r-jd-dengji">
+            <img src="../assets/img/reply/jd-dengji.png">
+            <span>8.3分</span>
+          </div>
+        </span>
+      </router-link>
+      <router-link to="/child_place" style="text-decoration: none; color: #222222">
+        <span class="col-sm-3 jingdian2">
+          <img src="../assets/img/child-place/c-p-picture.jpg">
+          <div class="jd-name">
+            东京塔
+          </div>
+          <div class="r-jd-dengji">
+            <img src="../assets/img/reply/jd-dengji.png">
+            <span>8.9分</span>
+          </div>
+        </span>
+      </router-link>
+      <router-link to="/child_place" style="text-decoration: none; color: #222222">
+        <span class="col-sm-3 jingdian3">
+          <img src="../assets/img/reply/jingdian2.jpg">
+          <div class="jd-name">
+            涩谷区
+          </div>
+          <div class="r-jd-dengji">
+            <img src="../assets/img/reply/jd-dengji.png">
+            <span>8.5分</span>
+          </div>
+        </span>
+      </router-link>
+      <router-link to="/child_place" style="text-decoration: none; color: #222222">
+        <span class="col-sm-3 jingdian4">
+          <img src="../assets/img/reply/jingdian4.jpg">
+          <div class="jd-name">
+            新宿区歌舞伎
+          </div>
+          <div class="r-jd-dengji">
+            <img src="../assets/img/reply/jd-dengji.png">
+            <span>8.1分</span>
+          </div>
+        </span>
+      </router-link>
       <br>
       <hr>
     </div>
@@ -75,9 +83,11 @@
       </div>
       <div class="r-yj-body">
         <div class="r-yj-1">
-          <div class="yj-1-container">
-            【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-          </div>
+          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
+            <div class="yj-1-container">
+              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
+            </div>
+          </router-link>
           <div class="yj-1-xs">
             <span>yinyuyinyu</span>
             <span>|</span>
@@ -85,14 +95,18 @@
             <span>|</span>
             <span>201人喜欢</span>
             <span class="glyphicon glyphicon-heart"></span>
-            <span class="yj-pinglun">评论</span>
+            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
+              <span class="yj-pinglun">评论</span>
+            </router-link>
           </div>
           <br><hr>
         </div>
         <div class="r-yj-1">
-          <div class="yj-1-container">
-            【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-          </div>
+          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
+            <div class="yj-1-container">
+              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
+            </div>
+          </router-link>
           <div class="yj-1-xs">
             <span>yinyuyinyu</span>
             <span>|</span>
@@ -100,14 +114,18 @@
             <span>|</span>
             <span>201人喜欢</span>
             <span class="glyphicon glyphicon-heart"></span>
+            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
             <span class="yj-pinglun">评论</span>
+            </router-link>
           </div>
           <br><hr>
         </div>
         <div class="r-yj-1">
-          <div class="yj-1-container">
-            【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-          </div>
+          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
+            <div class="yj-1-container">
+              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
+            </div>
+          </router-link>
           <div class="yj-1-xs">
             <span>yinyuyinyu</span>
             <span>|</span>
@@ -115,13 +133,17 @@
             <span>|</span>
             <span>201人喜欢</span>
             <span class="glyphicon glyphicon-heart"></span>
-            <span class="yj-pinglun">评论</span>
+            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
+              <span class="yj-pinglun">评论</span>
+            </router-link>
           </div>
           <br><hr>
         </div>
-        <div class="yj-more">
-          更多东京游记
-        </div>
+        <router-link to="/travel_notes" style="text-decoration: none;color: #11bf79">
+          <div class="yj-more">
+            更多东京游记
+          </div>
+        </router-link>
       </div>
     </div>
   </div>

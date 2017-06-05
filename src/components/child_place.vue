@@ -14,6 +14,7 @@
       </div>
       <div class="c-p-xx-list">
         <div class="c-p-xx-1">
+          <router-link to="/reply">
           <div class="c-p-xx-img">
             <img src="../assets/img/child-place/c-p-picture.jpg">
           </div>
@@ -39,67 +40,72 @@
               80252人去过
             </div>
           </div>
+          </router-link>
           <br><hr>
         </div>
         <div class="c-p-xx-1">
-          <div class="c-p-xx-img">
-            <img src="../assets/img/child-place/c-p-pic2.jpg">
-          </div>
-          <div class="c-p-xx-js">
-            <div>
-              东京迪斯尼度假区
+          <router-link to="/reply">
+            <div class="c-p-xx-img">
+              <img src="../assets/img/child-place/c-p-pic2.jpg">
             </div>
-            <div>
-              Tokyo Disney Resort
-            </div>
-            <div>
-              日本
-            </div>
-            <div>
+            <div class="c-p-xx-js">
+              <div>
+                东京迪斯尼度假区
+              </div>
+              <div>
+                Tokyo Disney Resort
+              </div>
+              <div>
+                日本
+              </div>
+              <div>
             <span class="c-p-xx-start">
               <img src="../assets/img/child-place/c-p-start.png">
             </span>
             <span class="c-p-xx-gs">
               其他
             </span>
+              </div>
+              <div>
+                4135人去过
+              </div>
             </div>
-            <div>
-              4135人去过
-            </div>
-          </div>
+          </router-link>
           <br><hr>
         </div>
         <div class="c-p-xx-1">
-          <div class="c-p-xx-img">
-            <img src="../assets/img/child-place/c-p-picture.jpg">
-          </div>
-          <div class="c-p-xx-js">
-            <div>
-              东京都
+          <router-link to="/reply">
+            <div class="c-p-xx-img">
+              <img src="../assets/img/child-place/c-p-picture.jpg">
             </div>
-            <div>
-              Tokyo Metropolis
-            </div>
-            <div>
-              日本
-            </div>
-            <div>
+            <div class="c-p-xx-js">
+              <div>
+                东京都
+              </div>
+              <div>
+                Tokyo Metropolis
+              </div>
+              <div>
+                日本
+              </div>
+              <div>
             <span class="c-p-xx-start">
 
             </span>
             <span class="c-p-xx-gs">
               城市
             </span>
+              </div>
+              <div>
+                1436人去过
+              </div>
             </div>
-            <div>
-              1436人去过
-            </div>
-          </div>
+          </router-link>
           <br><hr>
         </div>
       </div>
       <div class="p-more">
-        查看更多目的地 >
+        <router-link to="/place" style="color: #11bf79;text-decoration: none">查看更多目的地 ></router-link>
       </div>
     </div>
     <div class="p-null"></div>
