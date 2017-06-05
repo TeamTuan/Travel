@@ -11,7 +11,9 @@ import add_notes from '@/components/add_notes'
 import login from '@/components/login'
 import user_name from '@/components/user_name'
 import user_introduction from '@/components/user_introduction'
-
+import place from '@/components/place'
+import child_place from '@/components/chlid_place'
+import reply from '@/components/reply'
 
 Vue.use(Router);
 
@@ -75,6 +77,21 @@ export default new Router({
       path: '/user_introduction',
       name: 'user_introduction',
       component: user_introduction
+    },
+    {
+      path: '/place',
+      name: 'place',
+      component: place
+    },
+    {
+      path: '/child_place',
+      name: 'child_place',
+      component: child_place
+    },
+    {
+      path: '/reply',
+      name: 'reply',
+      component: reply
     }
   ]
 })
