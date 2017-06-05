@@ -12,6 +12,7 @@ import login from '@/components/login'
 import user_name from '@/components/user_name'
 import user_introduction from '@/components/user_introduction'
 
+
 Vue.use(Router);
 
 export default new Router({
