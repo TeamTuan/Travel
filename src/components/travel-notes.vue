@@ -9,7 +9,7 @@
             </div>
             <div class="my_nav" >
 
-                <div class="row my_row">
+                <div class="row my_row" style="margin: 0;">
 
                   <div class="col-xs-9">
                     <img src="../assets/img/xianggang.jpg">
@@ -21,7 +21,7 @@
                                                                               aria-hidden="true"></span></a></div>
                 </div>
 
-                <div class="row my_row">
+                <div class="row my_row" style="margin: 0;">
                   <div class="col-xs-9">
                     <img src="../assets/img/harbin.jpg">
                     <h2>哈尔滨</h2>

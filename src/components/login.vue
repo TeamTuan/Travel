@@ -52,7 +52,6 @@
   </div>
 </template>
 <script>
-  import  "../assets/js/telphone-login";
   export default {
 
   }

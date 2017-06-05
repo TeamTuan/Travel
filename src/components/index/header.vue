@@ -1,13 +1,13 @@
 
 <template>
   <div>
-    <div class="container-fluid headerr">
+    <div class="headerr">
       <div class="row nav">
 
         <div class="col-xs-10">
           <ul class="menu row" style="padding: 0;">
             <div class="col-xs-3">首页</div>
-            <div class="col-xs-3">目的地</div>
+            <div class="col-xs-3" @click="click">目的地</div>
             <div class="col-xs-3">商城</div>
             <div class="col-xs-3">社区</div>
           </ul>
@@ -30,7 +30,9 @@
       }
     },
     methods:{
-
+      click:function () {
+        this.$router.push("/user/1");
+      }
     },
     components:{
 
@@ -39,7 +41,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
   .headerr{

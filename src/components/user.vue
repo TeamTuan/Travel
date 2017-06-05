@@ -7,26 +7,35 @@
             <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true" style="font-size:35px;"></span>
             <router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
           </div>
-
         </div>
       </div>
-      <div class="row row3"  style="height:2rem;">
-        <div class="col-xs-4"  style="height:100%">
-          <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle user">
+      <div v-show="show">
+        <div class="row row3"  style="height:2rem;">
+          <div class="col-xs-4"  style="height:100%">
+            <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle user">
+          </div>
+          <div class="col-xs-6"  style="height:100%;line-height: 2rem;">
+            <span>小魔女1111</span>&gt;
+          </div>
+          <div class="col-xs-2" style="height:100%">
+            <span class="glyphicon glyphicon-calendar" style="position: relative;top:50%;margin-top:-1rem;font-size: 70px" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="col-xs-6"  style="height:100%;line-height: 2rem;">
-          <span>小魔女1111</span>&gt;
-        </div>
-        <div class="col-xs-2" style="height:100%">
-          <span class="glyphicon glyphicon-calendar" style="position: relative;top:50%;margin-top:-1rem;font-size: 70px" aria-hidden="true"></span>
+        <div class="row" style="line-height:2rem;height: 2rem;">
+          <div class="col-xs-2 col-xs-offset-1">
+            <span>0</span>粉丝
+          </div>
+          <div class="col-xs-2">
+            <span>0</span>关注
+          </div>
         </div>
       </div>
-      <div class="row" style="line-height:2rem;">
-        <div class="col-xs-2 col-xs-offset-1">
-          <span>0</span>粉丝
+      <div class="unlogined" v-show="!show">
+        <div class="row" style="height: 3rem;line-height:3rem;text-align:center;">
+          <router-link to="/login"><img src="../assets/img/user.png" class="img-circle" style="height:100%;" alt=""></router-link>
         </div>
-        <div class="col-xs-2">
-          <span>0</span>关注
+        <div class="row" style="height: 1rem; line-height:1rem;text-align:center;">
+          登录体验更多
         </div>
       </div>
     </div>
@@ -97,7 +106,16 @@
 </template>
 <script>
 
-export default{};
+export default{
+    data:function () {
+      return {
+          show:false
+      }
+    },
+    methods:{
+
+    }
+};
 </script>
 <style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";
@@ -173,5 +191,8 @@ export default{};
   }
   .icons{
     font-size:30px;
+  }
+  .unlogined{
+    height:4rem;
   }
 </style>

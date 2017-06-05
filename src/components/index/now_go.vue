@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="row now_go">
+    <div class="row now_go" style="margin: 0;">
       <div style="height: 100%;">
         <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
         <div>现在出发</div>
       </div>
     </div>
-    <div class="row nav2">
-      <ul class="nav_list">
+    <div class="row nav2" style="margin: 0;">
+      <ul class="nav_list" style="left: 0;">
         <li>全部</li>
         <li>当季</li>
         <li>干货</li>
@@ -28,7 +28,7 @@
 </script>
 
 
-<style>
+<style scoped>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
   .now_go{
@@ -36,6 +36,7 @@
     height: 1rem;
     text-align: center;
     color: #3c763d;
+    width: 100%;
   }
   .nav2,.nav_list{
     height: 1.5rem;
@@ -44,6 +45,7 @@
   .nav2{
     overflow: hidden;
     position: relative;
+    width: 100%;
   }
   .nav_list{
     width: 14rem;
