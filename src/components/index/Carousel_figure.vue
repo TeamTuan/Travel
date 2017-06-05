@@ -1,61 +1,66 @@
 <template>
-  <div class="img_banner">
-    <div class="imgs row" id="a">
-      <div><img src="../../assets/img/1.jpg" alt=""></div>
-      <div><img src="../../assets/img/2.jpg" alt=""></div>
-      <div><img src="../../assets/img/3.png" alt=""></div>
-      <div><img src="../../assets/img/4.jpg" alt=""></div>
-      <div><img src="../../assets/img/5.jpg" alt=""></div>
-    </div>
-    <div class="icon">
-      <ul>
-
-      </ul>
-    </div>
-  </div>
-
+    <swiper :options="swiperOption" class="swiper-box">
+      <swiper-slide class="swiper-item"><img src="../../assets/img/1.jpg" alt=""></swiper-slide>
+      <swiper-slide class="swiper-item"><img src="../../assets/img/2.jpg" alt=""></swiper-slide>
+      <swiper-slide class="swiper-item"><img src="../../assets/img/3.png" alt=""></swiper-slide>
+      <swiper-slide class="swiper-item"><img src="../../assets/img/4.jpg" alt=""></swiper-slide>
+      <swiper-slide class="swiper-item"><img src="../../assets/img/5.jpg" alt=""></swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+    </swiper>
 </template>
 
 <script>
-  import "../../assets/js/jquery-3.2.1.min";
-  import "../../assets/js/Carousel_figure.js";
-  export default {}
+  export default {
+    data() {
+      return {
+        swiperOption: {
+          pagination: '.swiper-pagination',
+          direction: 'horizontal',
+          slidesPerView: 1,
+          paginationClickable: true,
+          spaceBetween: 30,
+          mousewheelControl: true
+        }
+
+      }
+    }
+  }
 </script>
 
 
 
-<style>
+<style scoped>
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
-  @import "../../assets/css/swiper-3.4.2.min.css";
   *{
     padding: 0;
     margin: 0;
   }
-  .row{
-    margin: 0;
-    padding: 0;
-  }
-  .img_banner{
-    height: 5.2rem;
+
+  .swiper-box {
     width: 100%;
-    background: gray;
-  }
-  .imgs{
     height: 5.2rem;
-    width: 100%;
-    position: relative;
   }
-  .imgs div{
-    height: 5.2rem;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+  .swiper-item {
+    height: 100%;
+    text-align: center;
+    font-size: 18px ;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
-  .imgs img{
-    height: 5.2rem;
-    width: 100%;
-  }
+
+
 
 </style>

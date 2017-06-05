@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import place from '@/components/place'
-import child_place from '@/components/child_place'
-import reply from '@/components/reply'
+import Hello from '@/components/index/index'
 import setting from '@/components/setting'
 import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
@@ -10,7 +8,11 @@ import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
 import child from '@/components/login'
 import add_notes from '@/components/add_notes'
-Vue.use(Router)
+import login from '@/components/login'
+import user_name from '@/components/user_name'
+import user_introduction from '@/components/user_introduction'
+
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -20,7 +22,7 @@ export default new Router({
       component: Hello
     },
     {
-      path: '/setting/',
+      path: '/setting',
       name: 'setting',
       component: setting
     },
@@ -54,26 +56,24 @@ export default new Router({
       path: '/add_notes',
       name: 'add_notes',
       component: add_notes
-    },
+    }
+    ,
     {
-      path:'/child_place',
-      name:'child_place',
-      component:child_place
-    },
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+    ,
     {
-      path:'/reply',
-      name:'reply',
-      component:reply
-    },
-    //{
-    //  path:'/place',
-    //  name:'place',
-    //  component:place
-    //},
+      path: '/user_name',
+      name: 'user_name',
+      component: user_name
+    }
+    ,
     {
-      path:'/child_place',
-      name:'child_place',
-      component:child_place
+      path: '/user_introduction',
+      name: 'user_introduction',
+      component: user_introduction
     }
   ]
 })
