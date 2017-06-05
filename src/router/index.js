@@ -8,6 +8,8 @@ import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
 import child from '@/components/login'
 import add_notes from '@/components/add_notes'
+import login from '@/components/login'
+import user_name from '@/components/user_name'
 
 Vue.use(Router);
 
@@ -53,6 +55,18 @@ export default new Router({
       path: '/add_notes',
       name: 'add_notes',
       component: add_notes
+    }
+    ,
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+    ,
+    {
+      path: '/user_name',
+      name: 'user_name',
+      component: user_name
     }
   ]
 })

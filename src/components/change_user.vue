@@ -11,22 +11,30 @@
         <div class="col-xs-3"><img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle" style="height:0.8rem;width:0.8rem;"></div>
         <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
       </div>
-      <div class="row list"><div class="col-xs-3">用户昵称</div>
-        <div class="col-xs-5"></div>
-        <div class="col-xs-3">小魔女1111</div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
+
+      <router-link to="/user_name" style="color: #2c3e50;">
+        <div class="row list"><div class="col-xs-3">用户昵称</div>
+          <div class="col-xs-5"></div>
+          <div class="col-xs-3">小魔女1111</div>
+          <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+        </div>
+      </router-link>
+
       <div class="row list"><div class="col-xs-3">性别</div>
         <div class="col-xs-5"></div>
         <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
+        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+      </div>
       <div class="row list"><div class="col-xs-3">常居城市</div>
         <div class="col-xs-5"></div>
         <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
+        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+      </div>
       <div class="row list"><div class="col-xs-3">个人简介</div>
         <div class="col-xs-5"></div>
         <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
+        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+      </div>
     </div>
   </div>
 </template>
