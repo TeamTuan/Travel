@@ -2,7 +2,7 @@
 <div>
   <div class="header" style="width:10rem;height:1.5rem;background:#439865;">
     <div class="col-xs-2">
-      <span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span>
+      <router-link to="/change_user"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
     </div>
     <div class="col-xs-8"></div>
     <div class="col-xs-2">
