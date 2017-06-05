@@ -5,7 +5,6 @@
       <div class="row" @click="woman">女</div>
     </div>
   </div>
-
 </template>
 <script>
   export default{

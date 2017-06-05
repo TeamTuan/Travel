@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <sex v-show="!show" style="position: absolute;z-index: 100;" @change_sex="change_sex"></sex>
+    <sex v-show="show" style="position: absolute;z-index: 100;" @change_sex="change_sex"></sex>
   </div>
 </template>
 <script>
@@ -51,7 +51,7 @@
   export default{
       data:function () {
         return {
-            show:true,
+            show:false,
             sex:""
         }
       },
@@ -60,11 +60,11 @@
       },
       methods:{
           sex_btn:function () {
-            this.show=false;
+            this.show=true;
           },
           change_sex:function (val) {
             this.sex=val;
-            this.show=true;
+            this.show=false;
           }
       }
   };

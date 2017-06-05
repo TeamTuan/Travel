@@ -11,12 +11,9 @@
         </div>
         <div style="text-align: center;margin-top: 0.5rem;">我在午夜醒来</div>
         <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;">{{ blog.title }}</div>
-        <div style="padding: 0.4rem 0.8rem 0 0.8rem;">{{ blog.content
-          }}</div>
+        <div style="padding: 0.4rem 0.8rem 0 0.8rem;">{{ blog.content }}</div>
       </div>
     </div>
-
-
   </div>
 
 </template>
@@ -31,6 +28,7 @@
     },
     created:function () {
       var _this=this;
+
       Axios.get("http://127.0.0.1/Travel_hou/blog/index")
         .then(function (res) {
           _this.bloglist=res.data;

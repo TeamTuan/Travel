@@ -16,6 +16,7 @@ import user_introduction from '@/components/user_introduction'
 import place from '@/components/place'
 import child_place from '@/components/child_place'
 import reply from '@/components/reply'
+import login_ma from '@/components/login_ma'
 
 Vue.use(Router);
 
@@ -23,8 +24,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'login',
+      component: login
     },
     {
       path: '/setting',
