@@ -23,8 +23,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: login
+      name: 'Hello',
+      component: Hello
     },
     {
       path: '/setting',
