@@ -84,8 +84,8 @@
   @import "../../assets/css/common.css";
   .recentt{
     height: 4rem;
-    width: 9.7rem;
-    margin-left: 0.15rem;
+    width: 100%;
+    /*margin-left: 0.15rem;*/
     background: #11bf79;
     border-radius: 7px;
   }

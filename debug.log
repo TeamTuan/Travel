@@ -4,3 +4,8 @@
 [0526/122602.240:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
 [0526/122604.656:ERROR:process_info.cc(625)] range at 0xfe967000, size 0x230 fully unreadable
 [0526/122604.660:ERROR:process_info.cc(625)] range at 0xfe96e000, size 0xf84 fully unreadable
+[0604/223712.108:ERROR:process_info.cc(625)] range at 0xfe604000, size 0x230 fully unreadable
+[0604/223712.115:ERROR:process_info.cc(625)] range at 0xfe60f000, size 0xf84 fully unreadable
+[0604/223712.159:ERROR:process_reader_win.cc(233)] ReadMemory at 0x3d3000 of 53248 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0604/223712.159:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0604/223712.167:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)

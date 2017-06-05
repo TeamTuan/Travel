@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <div class="container-fluid headerr">
+    <div class="headerr">
       <div class="row nav">
 
         <div class="col-xs-10">

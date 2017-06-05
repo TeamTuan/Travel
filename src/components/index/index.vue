@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index_all">
     <commonheader class="navbar-fixed-top nav_fix" style="height: 1.6rem;"></commonheader>
     <banner style="margin-top: 1.6rem"></banner>
     <search class="m_search"></search>
@@ -35,6 +35,9 @@ import "../../assets/js/top.js";
 <style scoped>
   .new_search{
     background: #11bf79;
+  }
+  .index_all{
+    width: 100%;
   }
 </style>
 <style></style>

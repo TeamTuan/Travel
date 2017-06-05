@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/register'
+import Hello from '@/components/index/index'
 import setting from '@/components/setting'
 import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
@@ -9,7 +9,7 @@ import travel_notes from '@/components/travel-notes'
 import child from '@/components/login'
 import add_notes from '@/components/add_notes'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
