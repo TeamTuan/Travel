@@ -1,45 +1,73 @@
 <template>
-  <div class="all">
-    <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-      <div class="col-xs-1"><router-link to="/setting" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
-      <div class="col-xs-4"><span>编辑个人信息</span></div>
-    </div>
-    <div class="row bannerlist" style="padding: 0;margin: 0;">
-      <div class="row list">
-        <div class="col-xs-3">头像</div>
-        <div class="col-xs-5"></div>
-        <div class="col-xs-3"><img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle" style="height:0.8rem;width:0.8rem;"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+  <div class="all" style="position: relative;">
+    <div>
+      <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
+        <div class="col-xs-1"><router-link to="/setting" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
+        <div class="col-xs-4"><span>编辑个人信息</span></div>
       </div>
-
-      <router-link to="/user_name" style="color: #2c3e50;">
-        <div class="row list"><div class="col-xs-3">用户昵称</div>
+      <div class="row bannerlist" style="padding: 0;margin: 0;">
+        <div class="row list">
+          <div class="col-xs-3">头像</div>
           <div class="col-xs-5"></div>
-          <div class="col-xs-3">小魔女1111</div>
+          <div class="col-xs-3"><img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle" style="height:0.8rem;width:0.8rem;"></div>
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
-      </router-link>
 
-      <div class="row list"><div class="col-xs-3">性别</div>
-        <div class="col-xs-5"></div>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
-      </div>
-      <div class="row list"><div class="col-xs-3">常居城市</div>
-        <div class="col-xs-5"></div>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
-      </div>
-      <div class="row list"><div class="col-xs-3">个人简介</div>
-        <div class="col-xs-5"></div>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+        <router-link to="/user_name" style="color: #2c3e50;">
+          <div class="row list"><div class="col-xs-3">用户昵称</div>
+            <div class="col-xs-5"></div>
+            <div class="col-xs-3">小魔女1111</div>
+            <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+          </div>
+        </router-link>
+
+        <div class="row list" @click="sex_btn">
+          <div class="col-xs-3">性别</div>
+          <div class="col-xs-5"></div>
+          <div class="col-xs-3" style="text-align: center;line-height: 1.2rem;">{{ sex }}</div>
+          <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+        </div>
+        <div class="row list"><div class="col-xs-3">常居城市</div>
+          <div class="col-xs-5"></div>
+          <div class="col-xs-3"></div>
+          <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+        </div>
+        <router-link to="/user_introduction" style="color: #2c3e50;">
+          <div class="row list"><div class="col-xs-3">个人简介</div>
+            <div class="col-xs-5"></div>
+            <div class="col-xs-3"></div>
+            <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+          </div>
+        </router-link>
+
       </div>
     </div>
+
+    <sex v-show="!show" style="position: absolute;z-index: 100;" @change_sex="change_sex"></sex>
   </div>
 </template>
 <script>
-  export default{};
+  import sex from "./sex.vue";
+  export default{
+      data:function () {
+        return {
+            show:true,
+            sex:""
+        }
+      },
+      components:{
+          sex
+      },
+      methods:{
+          sex_btn:function () {
+            this.show=false;
+          },
+          change_sex:function (val) {
+            this.sex=val;
+            this.show=true;
+          }
+      }
+  };
 </script>
 <style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";

@@ -10,6 +10,7 @@ import child from '@/components/login'
 import add_notes from '@/components/add_notes'
 import login from '@/components/login'
 import user_name from '@/components/user_name'
+import user_introduction from '@/components/user_introduction'
 
 Vue.use(Router);
 
@@ -67,6 +68,12 @@ export default new Router({
       path: '/user_name',
       name: 'user_name',
       component: user_name
+    }
+    ,
+    {
+      path: '/user_introduction',
+      name: 'user_introduction',
+      component: user_introduction
     }
   ]
 })
