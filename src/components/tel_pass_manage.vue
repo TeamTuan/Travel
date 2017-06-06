@@ -32,14 +32,20 @@
        <div class="col-xs-3"></div>
        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
    </div>
-   <router-link to="/user"><div class="row footer">
+     <div class="row footer" @click="exit">
      退出当前帐号
-   </div></router-link>
+     </div>
 
  </div>
 </template>
 <script>
-  export default{};
+  export default{
+      methods:{
+          exit:function () {
+            this.$router.push("/user_login/null/false");
+          }
+      }
+  };
 </script>
 <style scoped>
   @import "../assets/lib/bootstrap/css/bootstrap.css";

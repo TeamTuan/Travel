@@ -10,8 +10,8 @@
           <img src="../../assets/img/morentouxiang.jpeg" alt="" class="small_img img-circle">
         </div>
         <div style="text-align: center;margin-top: 0.5rem;">我在午夜醒来</div>
-        <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;">{{ blog.title }}</div>
-        <div style="padding: 0.4rem 0.8rem 0 0.8rem;">{{ blog.content }}</div>
+        <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;margin-bottom: 0.5rem;">{{ blog.title }}</div>
+        <textarea style="width: 9rem;margin-left: 0.5rem;height: 4rem;outline: none;border: 1px solid black;">{{ blog.content }}</textarea>
       </div>
     </div>
   </div>
