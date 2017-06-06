@@ -14,8 +14,8 @@
         </div>
       </div>
       <router-link to="/register" style="text-decoration:none;color:#f5f7f2;" >
-      <div class="col-xs-3 col-xs-offset-4" style="height: 100%;" >
-        <div style="height:100%;font-size:30px;color:white;text-align:center;" >
+        <div class="col-xs-3 col-xs-offset-4" style="height: 100%;" >
+          <div style="height:100%;font-size:30px;color:white;text-align:center;" >
           <button style="border:1px solid white;display:inline-block;background:#40c895;width: 2rem;height:1rem;text-align: center;line-height: 1rem;margin-top: 0.5rem;">注册</button>
         </div>
       </div>

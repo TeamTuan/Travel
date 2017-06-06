@@ -6,9 +6,11 @@ import user from '@/components/user'
 import tel_pass_manage from '@/components/tel_pass_manage'
 import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
-import child from '@/components/login'
 import add_notes from '@/components/add_notes'
 import login from '@/components/login'
+import register from '@/components/register'
+import tel_login from '@/components/tel_login'
+
 import user_name from '@/components/user_name'
 import user_introduction from '@/components/user_introduction'
 import place from '@/components/place'
@@ -42,6 +44,11 @@ export default new Router({
       component: tel_pass_manage
     },
     {
+      path: '/tel_login',
+      name: 'tel_login',
+      component: tel_login
+    },
+    {
       path: '/change_user',
       name: 'change_user',
       component: change_user
@@ -52,21 +59,21 @@ export default new Router({
       component: travel_notes
     },
     {
-      path: '/child',
-      name: 'child',
-      component: child
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+    ,
+    {
+      path: '/register',
+      name: 'register',
+      component: register
     }
     ,
     {
       path: '/add_notes',
       name: 'add_notes',
       component: add_notes
-    }
-    ,
-    {
-      path: '/login',
-      name: 'login',
-      component: login
     }
     ,
     {
