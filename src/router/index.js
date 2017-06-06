@@ -25,8 +25,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'register_ma',
-      component: register_ma
+      name: 'Hello',
+      component: Hello
     },
     {
       path: '/setting',
@@ -101,6 +101,15 @@ export default new Router({
       path: '/reply',
       name: 'reply',
       component: reply
+    },
+    {
+      path: '/login_ma',
+      name: 'login_ma',
+      component: login_ma
+    },{
+      path: '/register_ma',
+      name: 'register_ma',
+      component: register_ma
     }
   ]
 })

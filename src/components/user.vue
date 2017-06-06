@@ -32,7 +32,7 @@
       </div>
       <div class="unlogined" v-show="!show">
         <div class="row" style="height: 3rem;line-height:3rem;text-align:center;">
-          <router-link to="/login"><img src="../assets/img/user.png" class="img-circle" style="height:100%;" alt=""></router-link>
+          <router-link to="/login_ma"><img src="../assets/img/user.png" class="img-circle" style="height:100%;" alt=""></router-link>
         </div>
         <div class="row" style="height: 1rem; line-height:1rem;text-align:center;">
           登录体验更多

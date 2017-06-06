@@ -32,9 +32,10 @@
        <div class="col-xs-3"></div>
        <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></div>
    </div>
-   <div class="row footer">
+   <router-link to="/user"><div class="row footer">
      退出当前帐号
-   </div>
+   </div></router-link>
+
  </div>
 </template>
 <script>

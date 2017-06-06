@@ -1,10 +1,14 @@
 <template>
 <div class="container">
   <div class="row row1" style="height: 1.5rem;background:#439865;">
-    <div class="col-xs-1"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
+    <router-link to="/user">
+      <div class="col-xs-1"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></div>
+    </router-link>
+
     <div class="col-xs-3">账号密码</div>
     <div class="col-xs-5"></div>
-    <div class="col-xs-3">注册</div>
+    <router-link to="/register_ma"><div class="col-xs-3">注册</div></router-link>
+
   </div>
   <div class="row" style="height: 0.5rem;background:#439865;"></div>
   <div class="row" style="height: 3rem;background:#439865;text-align: center;line-height: 3rem;">登陆</div>
