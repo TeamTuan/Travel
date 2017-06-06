@@ -3,7 +3,7 @@
     <div class="row" style="height:2rem;">
       <div class="col-xs-5" style="height: 100%;;width: 4rem;">
         <div class="row" style="height: 100% ;">
-          <router-link to="/register" style="text-decoration:none;color:#f5f7f2;">
+          <router-link to="/user" style="text-decoration:none;color:#f5f7f2;">
           <div class="glyphicon glyphicon-arrow-left col-xs-3" aria-hidden="true" style="color:white;height:100%;padding: 0;
               line-height:2rem;font-size:40px;text-align:center;">
           </div>
