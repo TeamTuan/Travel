@@ -11,7 +11,7 @@
         <span class="col-xs-2" style="float:left;color:white;text-align:center;line-height:1.5rem;font-size:40px;" >+86</span>
         <span class="glyphicon glyphicon-chevron-down col-xs-1" aria-hidden="true" style="float:left;font-size:40px;color:white;text-align:center;line-height:1.5rem;" scoped></span>
         <div style="width:7rem;float:left;border-bottom:5px solid white;">
-          <input type="text" value="请填写您的手机号" style="opacity:0.8; background:#40c895;width:7rem;color:white;font-size:30px;text-align:center;line-height:1.5rem;border:none;" scoped/>
+          <input  type="text" placeholder="请填写您的手机号" style="opacity:0.8; background:#40c895;width:7rem;color:white;font-size:30px;text-align:center;line-height:1.5rem;border:none;" scoped/>
         </div>
       </div>
       <div class="row">
@@ -19,7 +19,7 @@
         <div class="col-xs-9">
           <div class="row">
             <div class="col-xs-6 " style="border-bottom:5px solid white;width:3.5rem;height: 1.5rem;z-index:1;" >
-                <input value="输入验证码" style="background:#40c895;text-align:center;height:1rem;width:2rem;margin-top:10px;font-size:30px;color:white;line-height:1rem;opacity:0.8;border:none;" scoped/>
+                <input  placeholder="输入验证码" style="background:#40c895;text-align:center;height:1rem;width:2rem;margin-top:10px;font-size:30px;color:white;line-height:1rem;opacity:0.8;border:none;" scoped/>
             </div>
             <div class="col-xs-6">
               <button style="font-size:30px;color:white;border:2px solid white;margin-top:10px;width:3.5rem;height: 1.3rem;text-align:center;line-height:1.3rem;background:#40c895;" scoped>发送验证码</button>
@@ -47,4 +47,5 @@
 <style src="../assets/lib/bootstrap/css/bootstrap.css" scoped>
 
 </style>
+
 
