@@ -106,10 +106,23 @@ export default new Router({
       path: '/login_ma',
       name: 'login_ma',
       component: login_ma
-    },{
+    },
+    {
       path: '/register_ma',
       name: 'register_ma',
       component: register_ma
+    },
+    {
+      path: '/user_login/:id／:flag',
+      name: 'user',
+      component: user
     }
+    ,
+    {
+      path: '/tuichu',
+      name: 'user',
+      component: user
+    }
+
   ]
 })

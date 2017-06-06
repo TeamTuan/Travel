@@ -9,13 +9,13 @@
           </div>
         </div>
       </div>
-      <div v-show="show">
+      <div v-show="flag">
         <div class="row row3"  style="height:2rem;">
           <div class="col-xs-4"  style="height:100%">
             <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle user">
           </div>
           <div class="col-xs-6"  style="height:100%;line-height: 2rem;">
-            <span>小魔女1111</span>&gt;
+            <span>{{ user_info.name }}</span>&gt;
           </div>
           <div class="col-xs-2" style="height:100%">
             <span class="glyphicon glyphicon-calendar" style="position: relative;top:50%;margin-top:-1rem;font-size: 70px" aria-hidden="true"></span>
@@ -30,9 +30,9 @@
           </div>
         </div>
       </div>
-      <div class="unlogined" v-show="!show">
+      <div class="unlogined" v-show="!flag">
         <div class="row" style="height: 3rem;line-height:3rem;text-align:center;">
-          <router-link to="/login_ma"><img src="../assets/img/user.png" class="img-circle" style="height:100%;" alt=""></router-link>
+          <router-link to="/login_ma"><img src="../assets/img/morentouxiang.jpeg" class="img-circle" style="height:100%;" alt=""></router-link>
         </div>
         <div class="row" style="height: 1rem; line-height:1rem;text-align:center;">
           登录体验更多
@@ -105,15 +105,29 @@
   </div>
 </template>
 <script>
-
+import Axios from "axios";
 export default{
     data:function () {
       return {
-          show:false
+          user_info:{},
+          flag:false
       }
     },
     methods:{
 
+    },
+    created:function(){
+        this.flag=this.$route.params.flag;
+        console.log(this.$route.params.flag);
+        console.log(this.flag);
+        var id=this.$route.params.id;
+        Axios.get("http://127.0.0.1/Travel_hou/user/select_user_by_id",{
+          params:{
+            id:id
+          }
+        }).then((res)=>{
+          this.user_info=res.data;
+        });
     }
 };
 </script>
