@@ -28,10 +28,10 @@
     </div>
     <div style="height: 7rem;" >
       <div style="border-bottom:2px solid white;height: 1.5rem;text-align:center;" >
-        <input value="输入邮箱/用户名" style="background:#40c895;border:none;text-align:center;font-size:30px;color:white;line-height:1.5rem;opacity:0.8;" scoped/>
+        <input  placeholder="输入邮箱/用户名" style="background:#40c895;border:none;text-align:center;font-size:30px;color:white;line-height:1.5rem;opacity:0.8;"/>
       </div>
       <div style="border-bottom:2px solid white;height: 1.5rem;text-align:center;" >
-        <input value="输入密码" style="background:#40c895;border:none;text-align:center;font-size:30px;color:white;line-height:1.5rem;text-align:center;opacity:0.8;" scoped/>
+        <input placeholder="输入密码" style="background:#40c895;border:none;text-align:center;font-size:30px;color:white;line-height:1.5rem;opacity:0.8;"/>
       </div>
       <div style="height:1rem;font-size:30px;color:white;line-height:1rem;text-align:center;"  >忘记密码？</div>
       <div style="height:2rem;text-align:center;" >
