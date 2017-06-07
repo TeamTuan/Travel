@@ -9,7 +9,7 @@
           </div>
         </div>
       </div>
-      <div v-show="flag">
+      <div v-show="this.flag">
         <div class="row row3"  style="height:2rem;">
           <div class="col-xs-4"  style="height:100%">
             <img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle user">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="unlogined" v-show="!flag">
+      <div class="unlogined" v-show="!this.flag">
         <div class="row" style="height: 3rem;line-height:3rem;text-align:center;">
           <router-link to="/login_ma"><img src="../assets/img/morentouxiang.jpeg" class="img-circle" style="height:100%;" alt=""></router-link>
         </div>
@@ -68,16 +68,17 @@
         </div>
         <div class="row list">
           <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-          <span>我的折扣优惠券</span>
+          <span @click="click">我的折扣优惠券</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
       </div>
       <div class="banner2">
         <router-link to="/travel_notes" style="color: #2c3e50;"><div class="row list">
           <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
-          <span>我的游记</span>
+          <span>我的游记{{ this.flag }}</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
-        </div></router-link>
+        </div>
+        </router-link>
 
 
         <div class="row list">
@@ -114,21 +115,27 @@ export default{
       }
     },
     methods:{
-
+      click:function () {
+        console.log(this.aa);
+      }
     },
-    created:function(){
-        this.flag=this.$route.params.flag;
-        console.log(this.$route.params.flag);
-        console.log(this.flag);
-        var id=this.$route.params.id;
-        Axios.get("http://127.0.0.1/Travel_hou/user/select_user_by_id",{
-          params:{
-            id:id
-          }
-        }).then((res)=>{
-          this.user_info=res.data;
-        });
+    mounted:function () {
+      if(this.$route.params.flag=="true"){
+        this.flag=true;
+      }else if(this.$route.params.flag=="false"){
+        this.flag=false;
+      }
+      var id=this.$route.params.id;
+      var _this=this;
+      Axios.get("http://localhost:3000/user_by_id",{
+        params:{
+          id:id
+        }
+      }).then(function (res) {
+        _this.user_info=JSON.parse(res.data);
+      });
     }
+
 };
 </script>
 <style scoped>

@@ -44,13 +44,15 @@ export default{
     },
     methods:{
         login:function(){
-            Axios.get("http://127.0.0.1/Travel_hou/user/index",{
+            var _this=this;
+            Axios.get("http://localhost:3000/login",{
                 params:{
                     tel:this.tel,
                     password:this.password
                 }
-            }).then((res)=>{
-                this.$router.push("/user_login/"+res.data.user_id+"／"+res.data.login);
+            }).then(function (res) {
+                var id=JSON.parse(res.data);
+                _this.$router.push("/user/"+id+"/true");
             });
         }
     }

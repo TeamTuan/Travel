@@ -13,7 +13,6 @@ $(function () {
       x: touch.pageX,
       y: touch.pageY
     };
-    console.log(startPosition);
     left=$(".nav_list").css("left").replace("px","");
   });
 

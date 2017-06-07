@@ -42,7 +42,7 @@
   export default{
       methods:{
           exit:function () {
-            this.$router.push("/user_login/null/false");
+            this.$router.push("/user/null/false");
           }
       }
   };
