@@ -34,7 +34,6 @@
           _this.bloglist=JSON.parse(res.data);
       });
 
-
     },
     methods:{
 
