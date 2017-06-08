@@ -2246,3 +2246,6 @@
 [0608/144409.263:ERROR:process_reader_win.cc(233)] ReadMemory at 0x661c98 of 22 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
 [0608/144409.263:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
 [0608/144409.271:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0608/151724.808:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0608/151724.809:ERROR:exception_snapshot_win.cc(87)] thread ID 13144 not found in process
+[0608/151724.809:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

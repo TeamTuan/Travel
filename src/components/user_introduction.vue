@@ -14,14 +14,37 @@
         个人简介
       </div>
       <div class="row" style="height: 4rem;width: 100%;">
-        <textarea name="" id="text" placeholder="一段话介绍你自己，140字以内"></textarea>
+        <textarea name="" id="text" placeholder="一段话介绍你自己，140字以内">{{ intro }}</textarea>
       </div>
     </div>
   </div>
 </template>
 <script>
+  import Axios from "axios";
   export default{
+    data:function () {
+      return {
+        intro:"",
+        login_id:0
+      }
+    },
+    mounted:function () {
+      if(document.cookie){
+        var arr=document.cookie.split(";")[1];
+        var new_arr=arr.split("=")[1];
+        this.login_id=Number(new_arr[1]);
+      }
 
+      var _this=this;
+      Axios.get("http://localhost:3000/user_by_id",{
+        params:{
+          id:this.login_id
+        }
+      }).then(function (res) {
+        _this.intro=JSON.parse(res.data).construction;
+      });
+
+    }
   }
 </script>
 <style scoped>

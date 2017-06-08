@@ -16,7 +16,7 @@
         <router-link to="/user_name" style="color: #2c3e50;">
           <div class="row list"><div class="col-xs-3">用户昵称</div>
             <div class="col-xs-5"></div>
-            <div class="col-xs-3">小魔女1111</div>
+            <div class="col-xs-3">{{ user_info.name }}</div>
             <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
           </div>
         </router-link>
@@ -28,8 +28,8 @@
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
         <div class="row list"><div class="col-xs-3">常居城市</div>
-          <div class="col-xs-5"></div>
-          <div class="col-xs-3"></div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4">{{ place }}</div>
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
         <router-link to="/user_introduction" style="color: #2c3e50;">
@@ -48,11 +48,15 @@
 </template>
 <script>
   import sex from "./sex.vue";
+  import Axios from "axios";
   export default{
       data:function () {
         return {
             show:false,
-            sex:""
+            sex:0,
+            login_id:0,
+            user_info:{},
+            place:""
         }
       },
       components:{
@@ -66,6 +70,29 @@
             this.sex=val;
             this.show=false;
           }
+      },
+      mounted:function () {
+          if(document.cookie){
+            var arr=document.cookie.split(";")[1];
+            var new_arr=arr.split("=")[1];
+            this.login_id=Number(new_arr[1]);
+          }
+
+          var _this=this;
+          Axios.get("http://localhost:3000/user_by_id",{
+            params:{
+              id:this.login_id
+            }
+          }).then(function (res) {
+            _this.user_info=JSON.parse(res.data);
+            if(_this.user_info.sex==1){
+              _this.sex="男";
+            }else if(_this.user_info.sex==0){
+              _this.sex="女";
+            }
+            _this.place=_this.user_info.now_place;
+          });
+
       }
   };
 </script>
