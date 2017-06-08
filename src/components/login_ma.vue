@@ -51,8 +51,12 @@ export default{
                     password:this.password
                 }
             }).then(function (res) {
-                var id=JSON.parse(res.data);
-                _this.$router.push("/user/"+id+"/true");
+                var token=res.data.id;
+                document.cookie="logined="+token;
+                document.cookie="login_id="+res.data.body;
+                var id=JSON.parse(res.data.body);
+                _this.$router.push("/user/"+id);
+
             });
         }
     }

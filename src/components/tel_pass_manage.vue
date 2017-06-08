@@ -42,7 +42,9 @@
   export default{
       methods:{
           exit:function () {
-            this.$router.push("/user/null/false");
+            document.cookie = "logined=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            document.cookie = "login_id=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            this.$router.push("/user/null");
           }
       }
   };

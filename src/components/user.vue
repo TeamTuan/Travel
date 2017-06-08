@@ -126,9 +126,10 @@ export default{
       }
     },
     mounted:function () {
-      if(this.$route.params.flag=="true"){
+      console.log(document.cookie);
+      if(document.cookie){
         this.flag=true;
-      }else if(this.$route.params.flag=="false"){
+      }else{
         this.flag=false;
       }
       var id=this.$route.params.id;
@@ -140,6 +141,7 @@ export default{
       }).then(function (res) {
         _this.user_info=JSON.parse(res.data);
       });
+
     }
 
 };
