@@ -14,7 +14,6 @@
         <p style="width: 9rem;margin-left: 0.5rem;">{{ blog.content }}</p>
       </div>
     </div>
-    <button @click="ajax">66666</button>
   </div>
 
 </template>
@@ -38,16 +37,7 @@
 
     },
     methods:{
-      ajax:function () {
-        Axios.post("http://localhost:3000/first")
-          .then(function (res) {
-            var data=JSON.parse(res.data);
-            for(var i=0;i<data.length;i++){
-              console.log(data[i].blog_id);
-            }
 
-          });
-      }
     }
   }
 </script>
