@@ -45,6 +45,7 @@
       }else{
 
       }
+      console.log(document.cookie);
     }
   }
 </script>
