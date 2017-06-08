@@ -30,9 +30,9 @@
     created:function () {
       var _this=this;
 
-      Axios.get("http://127.0.0.1/Travel_hou/blog/index")
+      Axios.get("http://localhost:3000/get_blog")
         .then(function (res) {
-          _this.bloglist=res.data;
+          _this.bloglist=JSON.parse(res.data);
       });
 
 

@@ -2,10 +2,14 @@
   <div>
     <div class="main_img">
       <div class="row row1">
-        <div class="col-xs-3 col-xs-offset-9" style="height: 100%;">
-          <div class="row row2" style="margin-top: 0.5rem;">
-            <span class=" glyphicon glyphicon-bell col-xs-6" aria-hidden="true" style="font-size:35px;"></span>
-            <router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog   col-xs-6" aria-hidden="true" style="font-size:35px;"></span></router-link>
+        <div class="col-xs-3" style="height: 1rem;line-height: 1rem;text-align: center;"><router-link to="/" style="color: white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
+        <div class="col-xs-6" style="height:1rem;"></div>
+        <div class="col-xs-3" style="height: 100%;">
+          <div class="row row2" style="">
+            <div class="col-xs-6" style="line-height: 1rem;text-align: center;"><span class=" glyphicon glyphicon-bell" aria-hidden="true" style="font-size:35px;"></span></div>
+            <div class="col-xs-6" style="line-height: 1rem;text-align: center;"><router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="font-size:35px;"></span></router-link></div>
+
+
           </div>
         </div>
       </div>
@@ -75,7 +79,7 @@
       <div class="banner2">
         <router-link to="/travel_notes" style="color: #2c3e50;"><div class="row list">
           <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
-          <span>我的游记{{ this.flag }}</span>
+          <span>我的游记</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         </router-link>
@@ -116,7 +120,9 @@ export default{
     },
     methods:{
       click:function () {
-        console.log(this.aa);
+        Axios.get("http://localhost:3000/check_login").then(function (res) {
+          console.log((res.data));
+        });
       }
     },
     mounted:function () {
@@ -156,11 +162,20 @@ export default{
 }
   .row1{
     height:1rem;
-    margin-top:0.3rem;
+    margin-top: 0.3rem;
+  }
+  .row1 div{
+    margin: 0;
+    padding: 0;
   }
   .row2{
     height: 100%;
-    width: 4rem;
+    width: 100%;
+  }
+  .row2 div{
+    height: 100%;
+    text-align: center;
+    line-height: 1rem;
   }
   .user{
     height: 2rem;
