@@ -11,7 +11,7 @@
         </div>
         <div style="text-align: center;margin-top: 0.5rem;">我在午夜醒来</div>
         <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;margin-bottom: 0.5rem;">{{ blog.title }}</div>
-        <textarea style="width: 9rem;margin-left: 0.5rem;height: 4rem;outline: none;border: 1px solid black;">{{ blog.content }}</textarea>
+        <textarea style="width: 9rem;margin-left: 0.5rem;outline: none;border: 0">{{ blog.content }}</textarea>
       </div>
     </div>
     <button @click="ajax">66666</button>
@@ -58,7 +58,7 @@
   @import "../../assets/lib/bootstrap/css/bootstrap.css";
   @import "../../assets/css/common.css";
   .blog{
-    height: 11rem;
+
     border-bottom: 1px solid dimgray;
     margin-bottom: 0.5rem;
     width: 100%;
@@ -68,7 +68,7 @@
     background: #000;
   }
   .blog_second{
-    height: 7rem;
+
   }
   .big_img{
     height: 4rem;
