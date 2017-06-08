@@ -11,7 +11,7 @@
         </div>
         <div style="text-align: center;margin-top: 0.5rem;">我在午夜醒来</div>
         <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;margin-bottom: 0.5rem;">{{ blog.title }}</div>
-        <textarea style="width: 9rem;margin-left: 0.5rem;outline: none;border: 0">{{ blog.content }}</textarea>
+        <p style="width: 9rem;margin-left: 0.5rem;">{{ blog.content }}</p>
       </div>
     </div>
     <button @click="ajax">66666</button>
