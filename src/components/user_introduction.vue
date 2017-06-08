@@ -6,7 +6,7 @@
       </div>
       <div class="col-xs-8"></div>
       <div class="col-xs-2">
-        <span class="glyphicon glyphicon-ok"  style="font-size:30px;" aria-hidden="true"></span>
+        <span @click="save_introduction" class="glyphicon glyphicon-ok"  style="font-size:30px;" aria-hidden="true"></span>
       </div>
     </div>
     <div style="width: 100%;">
@@ -14,7 +14,7 @@
         个人简介
       </div>
       <div class="row" style="height: 4rem;width: 100%;">
-        <textarea name="" id="text" placeholder="一段话介绍你自己，140字以内">{{ intro }}</textarea>
+        <textarea name="" id="text" placeholder="一段话介绍你自己，140字以内" v-model="intro"></textarea>
       </div>
     </div>
   </div>
@@ -44,6 +44,20 @@
         _this.intro=JSON.parse(res.data).construction;
       });
 
+    },
+    methods:{
+        save_introduction:function(){
+            var value=this.intro;
+            var _this=this;
+            Axios.get('http://localhost:3000/save_introduction',{
+                params:{
+                    id:_this.login_id,
+                    value:value
+                }
+            }).then(function(res){
+                console.log(res.data);
+            })
+        }
     }
   }
 </script>

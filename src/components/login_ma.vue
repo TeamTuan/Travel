@@ -76,7 +76,7 @@ export default{
     border: 0;
   }
   .row{
-    margin-top: -2px;
+
   }
   .row1{
     padding: 0 0.5rem 0 0.5rem;
