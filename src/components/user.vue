@@ -75,7 +75,7 @@
       <div class="banner2">
         <router-link to="/travel_notes" style="color: #2c3e50;"><div class="row list">
           <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
-          <span>我的游记{{ this.flag }}</span>
+          <span>我的游记</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
         </router-link>
