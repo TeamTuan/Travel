@@ -53,11 +53,11 @@
         created:function () {
          var _this=this;
 
-      Axios.get("http://localhost:3000/travel_notes")
-        .then(function (res) {
-          _this.travellist=JSON.parse(res.data);
-//          console.log(JSON.parse(res.data));
-        });
+//      Axios.get("http://localhost:3000/travel_notes")
+//        .then(function (res) {
+//          _this.travellist=JSON.parse(res.data);
+////          console.log(JSON.parse(res.data));
+//        });
 
     }
   }

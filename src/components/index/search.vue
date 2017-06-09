@@ -6,7 +6,7 @@
         style="font-size: 35px;"></span>
       </div>
       <div class="col-xs-10">
-        <input type="text" class="search-value" placeholder="搜索目的地、锦囊、游记、特价、穷游er">
+        <div class="search-value" style="line-height: 0.8rem;" @click="to_search">搜索目的地、锦囊、游记、特价、穷游er</div>
       </div>
       <div class="col-xs-1 icon">
         <span class="glyphicon glyphicon-qrcode" aria-hidden="true"
@@ -18,7 +18,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    methods:{
+      to_search:function () {
+        alert(11);
+      }
+    }
+  }
 </script>
 
 

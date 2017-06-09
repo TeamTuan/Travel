@@ -72,7 +72,7 @@
         </div>
         <div class="row list">
           <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-          <span @click="click">我的折扣优惠券</span>
+          <span>我的折扣优惠券</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
         </div>
       </div>
@@ -121,11 +121,7 @@ export default{
       }
     },
     methods:{
-      click:function () {
-        Axios.get("http://localhost:3000/check_login").then(function (res) {
-          console.log((res.data));
-        });
-      }
+
     },
     mounted:function () {
 
