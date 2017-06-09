@@ -46,9 +46,10 @@
 }
 .footer_add{
   font-size:1.4rem;
-  position:absolute;
+  position:fixed;
   right: 0.4rem;
   bottom:0.26rem;
+
 }
 
 .footer_add span{

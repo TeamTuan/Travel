@@ -41,49 +41,37 @@
 <script>
   import Axios from "axios";
   export default {
-    data:function () {
+    data: function () {
       return {
-        timer:"",
-        blog_title:"",
-        blog_content:"",
-        blog_img:"",
-//        login_id:0
+        blog_title: "",
+        blog_content: "",
+        login_id:0
       }
     },
-//    mounted:function(){
-//      if(document.cookie){
-//        var arr = document.cookie.split((";")[1]);
-//        var new_arr = arr.split("=")[1];
-//        this.login_id = Number(new_arr[1]);
-//      }
-//
-//    },
-
     methods:{
-      save_blog:function(){
+      save_blog:function() {
         var blog_title = this.blog_title;
         var blog_content = this.blog_content;
-        var blog_img = this.blog_img;
-
         var _this=this;
-        Axios.get("http://localhost:3000/save_blog",{
-          params:{
-//            id:_this.login_id,
-            blog_title:blog_title,
-            blog_content:blog_content,
-            blog_img:blog_img,
-
-
-
+        //var blog_img = this.blog_img;
+        if(document.cookie){
+          var arr=document.cookie.split(";")[1];
+          var new_arr=arr.split("=")[1];
+          this.login_id=Number(new_arr[1]);
+        }
+        Axios.get("http://localhost:3000/save_blog", {
+          params: {
+            id:this.login_id,
+            blog_title: blog_title,
+            blog_content: blog_content
           }
-        }).then(function(res){
-          console.log(res.data);
+        }).then(function (res) {
+          if(res.data=="success"){
+              _this.$router.push("/travel_notes");
+          }
         })
 
-
       }
-
-
     }
   }
 </script>

@@ -14,10 +14,9 @@
           <img src="../assets/img/xianggang.jpg">
           <h2>{{travel.title}}</h2>
         </div>
-        <div class="col-xs-2"><router-link to="/add_notes"><span class="glyphicon glyphicon-pencil"
+        <div class="col-xs-2"><router-link :to="'/publish_notes/'+travel.blog_id"><span class="glyphicon glyphicon-pencil"
                                                                  aria-hidden="true"></span></router-link></a></div>
-        <div class="col-xs-1"><a href=""><span class="glyphicon glyphicon-remove"
-                                               aria-hidden="true"></span></a></div>
+        <div class="col-xs-1"><span @click="delete_blog(travel.blog_id)" class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
       </div>
 
 
@@ -45,20 +44,43 @@
     data:function () {
       return {
         travellist:[],
-        login_id:0
+        login_id:0,
+        blog_id:0
       }
     },
 
 
-        created:function () {
+    created:function () {
          var _this=this;
-
-      Axios.get("http://localhost:3000/travel_notes")
+      if(document.cookie){
+        var arr=document.cookie.split(";")[1];
+        var new_arr=arr.split("=")[1];
+        this.login_id=Number(new_arr[1]);
+      }
+      Axios.get("http://localhost:3000/travel_notes",{
+           params:{
+               login_id:_this.login_id
+           }
+      })
         .then(function (res) {
           _this.travellist=JSON.parse(res.data);
-//          console.log(JSON.parse(res.data));
+          console.log(JSON.parse(res.data));
         });
 
+    },
+    methods:{
+        delete_blog:function (blog_id) {
+            var _this=this;
+          Axios.get("http://localhost:3000/delete_blog", {
+            params: {
+              id:blog_id
+            }
+          }).then(function (res) {
+            if(res.data=="success"){
+
+            }
+          });
+        }
     }
   }
 </script>

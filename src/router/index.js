@@ -16,7 +16,7 @@ import child_place from '@/components/child_place'
 import reply from '@/components/reply'
 import login_ma from '@/components/login_ma'
 import register_ma from '@/components/register_ma'
-
+import publish_notes from '@/components/publish_notes'
 Vue.use(Router);
 
 export default new Router({
@@ -98,6 +98,11 @@ export default new Router({
       path: '/register_ma',
       name: 'register_ma',
       component: register_ma
+    },
+    {
+      path: '/publish_notes/:id',
+      name: 'publish_notes',
+      component: publish_notes
     }
   ]
 })
