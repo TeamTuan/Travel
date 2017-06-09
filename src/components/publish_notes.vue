@@ -64,7 +64,7 @@
         }).then(function (res) {
             console.log(res.data);
           if(res.data=="success"){
-
+            _this.$router.push("/travel_notes");
           }
         });
       }
@@ -76,7 +76,6 @@
       Axios.get("http://localhost:3000/publish_blog", {
         params: {
           id:blog_id
-
         }
       }).then(function (res) {
         _this.blog_title=JSON.parse(res.data).title;

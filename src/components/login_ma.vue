@@ -54,7 +54,6 @@ export default{
                 var token=res.data.id;
                 document.cookie="logined="+token;
                 document.cookie="login_id="+res.data.body;
-                var id=JSON.parse(res.data.body);
                 _this.$router.push("/user");
 
             });

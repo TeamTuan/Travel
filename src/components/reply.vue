@@ -5,7 +5,7 @@
         <img src="../assets/img/logo.png" alt=""/>
       </span>
       <span class="col-xs-3 r-place">
-        东京
+        {{scene_info.name}}
       </span>
       <span class="col-xs-2">
         <span class="glyphicon glyphicon-search"></span>
@@ -15,71 +15,38 @@
     <div class="r-p-body-img">
       <img src="../assets/img/child-place/c-p-picture.jpg">
     </div>
-    <div class="r-p-shoucang">
-      <span class="glyphicon glyphicon-heart-empty"></span>
-      <span>我收藏的东京目的地</span>
-      <br><hr>
+
+    <div class="row">
+      <div class="row" style="height: 1rem;"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
     </div>
-    <div class="jingdian">
-      <div class="r-jd-header">
-        <span class="glyphicon glyphicon-thumbs-up"></span>
-        <span>不容错过</span>
-      </div>
-      <router-link to="/child_place" style="text-decoration: none; color: #222222">
-        <span class="col-sm-3 jingdian1">
-          <img src="../assets/img/reply/jingdian1.jpg">
-          <div class="jd-name">
-            浅草寺
-          </div>
-          <div class="r-jd-dengji">
-            <img src="../assets/img/reply/jd-dengji.png">
-            <span>8.3分</span>
-          </div>
-        </span>
-      </router-link>
-      <router-link to="/child_place" style="text-decoration: none; color: #222222">
-        <span class="col-sm-3 jingdian2">
-          <img src="../assets/img/child-place/c-p-picture.jpg">
-          <div class="jd-name">
-            东京塔
-          </div>
-          <div class="r-jd-dengji">
-            <img src="../assets/img/reply/jd-dengji.png">
-            <span>8.9分</span>
-          </div>
-        </span>
-      </router-link>
-      <router-link to="/child_place" style="text-decoration: none; color: #222222">
-        <span class="col-sm-3 jingdian3">
-          <img src="../assets/img/reply/jingdian2.jpg">
-          <div class="jd-name">
-            涩谷区
-          </div>
-          <div class="r-jd-dengji">
-            <img src="../assets/img/reply/jd-dengji.png">
-            <span>8.5分</span>
-          </div>
-        </span>
-      </router-link>
-      <router-link to="/child_place" style="text-decoration: none; color: #222222">
-        <span class="col-sm-3 jingdian4">
-          <img src="../assets/img/reply/jingdian4.jpg">
-          <div class="jd-name">
-            新宿区歌舞伎
-          </div>
-          <div class="r-jd-dengji">
-            <img src="../assets/img/reply/jd-dengji.png">
-            <span>8.1分</span>
-          </div>
-        </span>
-      </router-link>
-      <br>
-      <hr>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="r-p-youji">
       <div class="r-yj-header">
         <span class="glyphicon glyphicon-pencil"></span>
-        <span>东京游记推荐</span>
+        <span>东京评论推荐</span>
       </div>
       <div class="r-yj-body">
         <div class="r-yj-1">
@@ -115,7 +82,7 @@
             <span>201人喜欢</span>
             <span class="glyphicon glyphicon-heart"></span>
             <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-            <span class="yj-pinglun">评论</span>
+              <span class="yj-pinglun">评论</span>
             </router-link>
           </div>
           <br><hr>
@@ -141,7 +108,7 @@
         </div>
         <router-link to="/travel_notes" style="text-decoration: none;color: #11bf79">
           <div class="yj-more">
-            更多东京游记
+            更多东京评论
           </div>
         </router-link>
       </div>
@@ -149,7 +116,28 @@
   </div>
 </template>
 <script>
-  export default{}
+  import Axios from 'axios';
+  export default{
+    data:function(){
+      return{
+        scene_info:'',
+        scene_id:0
+      }
+    },
+    mounted:function () {
+      var scene_id=this.$route.params.id;
+      this.scene_id=scene_id;
+      var _this = this;
+      Axios.get("http://localhost:3000/publish_scene", {
+        params: {
+          id:scene_id
+        }
+      }).then(function (res) {
+        _this.scene_info=JSON.parse(res.data);
+        console.log(JSON.parse(res.data));
+      })
+    }
+  }
 </script>
 <style src="../assets/css/reply.css" scoped></style>
 <style src="../assets/lib/bootstrap/css/bootstrap.css" scoped></style>

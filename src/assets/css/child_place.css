@@ -43,8 +43,7 @@ a{
   line-height: 1rem;
   margin-right: 2%;
 }
-.search input{
-  width: 7rem;
+.search .place-fh{
   height: 1rem;
   float: left;
   font-size: 1.5em;

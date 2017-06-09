@@ -3,10 +3,10 @@
     <div class="index row" style="padding: 0.13rem;margin: 0;">
       <div class="col-xs-1 icon">
         <span class="glyphicon glyphicon-search" aria-hidden="true"
-        style="font-size: 35px;"></span>
+        style="font-size: 35px;" @click="to_child_place"></span>
       </div>
       <div class="col-xs-10">
-        <div class="search-value" style="line-height: 0.8rem;" @click="to_search">搜索目的地、锦囊、游记、特价、穷游er</div>
+        <input type="text" class="search-value" v-model="value" placeholder="搜索目的地、锦囊、游记、特价、穷游er">
       </div>
       <div class="col-xs-1 icon">
         <span class="glyphicon glyphicon-qrcode" aria-hidden="true"
@@ -19,9 +19,14 @@
 
 <script>
   export default {
+    data:function () {
+      return {
+        value:""
+      }
+    },
     methods:{
-      to_search:function () {
-        alert(11);
+      to_child_place:function () {
+        this.$router.push("/child_place/"+this.value);
       }
     }
   }
