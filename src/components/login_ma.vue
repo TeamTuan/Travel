@@ -13,7 +13,7 @@
   <div class="row" style="height: 0.5rem;background:#439865;"></div>
   <div class="row" style="height: 3rem;background:#439865;text-align: center;line-height: 3rem;">登陆</div>
   <div class="row input" style="height: 1rem;background:#439865;">
-    <input type="text" v-model="tel" placeholder="输入邮箱/用户名">
+    <input type="text" v-model="tel" placeholder="输入手机号">
   </div>
   <div class="row input" style="height: 1rem;background:#439865;">
     <input type="password" v-model="password" placeholder="输入密码">
@@ -22,7 +22,7 @@
   <div class="row" style="height: 2rem;background:#439865;">
     <button style="height: 1.2rem;width: 4rem;color: #439865;margin-top: 0.4rem;margin-left: 3rem;background:white;border-radius: 10px;" @click="login">登陆</button>
   </div>
-  <div class="row" style="height: 1rem;text-align: center;line-height: 1rem;background:#439865;">手机号登陆</div>
+  <div class="row" style="height: 1rem;text-align: center;line-height: 1rem;background:#439865;">邮箱登陆</div>
   <div class="row" style="height: 3rem;background:#439865;"></div>
   <div class="row" style="height: 1rem;background:#439865;text-align: center;line-height: 1rem;">第三方账号登陆</div>
   <div class="row icon" style="height: 3rem;background:#439865;">
@@ -55,7 +55,7 @@ export default{
                 document.cookie="logined="+token;
                 document.cookie="login_id="+res.data.body;
                 var id=JSON.parse(res.data.body);
-                _this.$router.push("/user/"+id);
+                _this.$router.push("/user");
 
             });
         }

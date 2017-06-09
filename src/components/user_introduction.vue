@@ -55,7 +55,7 @@
                     value:value
                 }
             }).then(function(res){
-                console.log(res.data);
+                console.log(JSON.parse(res.data));
             })
         }
     }

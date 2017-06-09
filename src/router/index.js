@@ -7,8 +7,6 @@ import tel_pass_manage from '@/components/tel_pass_manage'
 import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
 import add_notes from '@/components/add_notes'
-import login from '@/components/login'
-import register from '@/components/register'
 import tel_login from '@/components/tel_login'
 
 import user_name from '@/components/user_name'
@@ -34,7 +32,7 @@ export default new Router({
       component: setting
     },
     {
-      path: '/user/:id',
+      path: '/user',
       name: 'user',
       component: user
     },
@@ -58,18 +56,6 @@ export default new Router({
       name: 'travel_notes',
       component: travel_notes
     },
-    {
-      path: '/login',
-      name: 'login',
-      component: login
-    }
-    ,
-    {
-      path: '/register',
-      name: 'register',
-      component: register
-    }
-    ,
     {
       path: '/add_notes',
       name: 'add_notes',

@@ -14,7 +14,7 @@
         </div>
 
         <div class="col-xs-2 user_icon col-xs-offset-2">
-          <router-link :to="'/user/'+login_id" style="color: white;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></router-link>
+          <router-link to="/user" style="color: white;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></router-link>
         </div>
 
       </div>
@@ -25,25 +25,12 @@
   export default {
     data:function () {
       return {
-        timer:"",
-        login_id:0
+        timer:""
       }
     },
     methods:{
       click:function () {
         this.$router.push("/user/1");
-      }
-    },
-    components:{
-
-    },
-    mounted:function () {
-      if(document.cookie){
-        var arr=document.cookie.split(";")[1];
-        var new_arr=arr.split("=")[1];
-        this.login_id=Number(new_arr[1]);
-      }else{
-
       }
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div  class="row header"  style="height:1.5rem;background:#439865;width:10rem;">
-      <div class="col-xs-1"><router-link :to="'/user/'+login_id"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
+      <div class="col-xs-1"><router-link to="/user"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link></div>
       <div class="col-xs-3"><span>设置</span></div>
     </div>
     <div class="row title">个人设置</div>
@@ -131,20 +131,7 @@
 </template>
 <script>
   export default{
-    data:function () {
-      return {
-        login_id:0
-      }
-    },
-    mounted:function () {
-      if(document.cookie){
-        var arr=document.cookie.split(";")[1];
-        var new_arr=arr.split("=")[1];
-        this.login_id=Number(new_arr[1]);
-      }else{
 
-      }
-    }
   };
 </script>
 <style scoped>
