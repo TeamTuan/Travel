@@ -37,6 +37,13 @@
         <div class="col-xs-2"></div>
         <div class="col-xs-7 right">{{scene_info.grade}}</div>
       </div>
+      <div class="row" style="height: 5rem;">
+        <div class="col-xs-3 left">景点介绍</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-7">
+          <textarea style="height: 4.5rem;width: 100%;margin-top: 0.25rem;">{{scene_info.text}}</textarea>
+        </div>
+      </div>
     </div>
 
 
@@ -169,8 +176,9 @@
     line-height: 1rem;
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
+    border-bottom: 2px solid #d8d8d8;
   }
   .row .left{
     text-align: right;
