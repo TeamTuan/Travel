@@ -8,7 +8,6 @@ import change_user from '@/components/change_user'
 import travel_notes from '@/components/travel-notes'
 import add_notes from '@/components/add_notes'
 import tel_login from '@/components/tel_login'
-
 import user_name from '@/components/user_name'
 import user_introduction from '@/components/user_introduction'
 import place from '@/components/place'
