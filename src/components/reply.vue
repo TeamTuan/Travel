@@ -1,18 +1,13 @@
 <template>
   <div class="reply-place">
-    <div class="row r-p-header">
-      <span class="col-xs-4">
-        <img src="../assets/img/logo.png" alt=""/>
-      </span>
-      <span class="col-xs-3 r-place">
-        {{scene_info.name}}
-      </span>
-      <span class="col-xs-2">
-        <span class="glyphicon glyphicon-search"></span>
-        <span class="glyphicon glyphicon-plus"></span>
-      </span>
+    <div class="header row" style="width:10rem;height:1.5rem;background:#11bf79;">
+      <div class="col-xs-2">
+        <router-link :to="'/child_place/'+value" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
+      </div>
+      <div class="col-xs-8" style="color: whitesmoke;font-size: 30px;">{{scene_info.name}}</div>
+      <div class="col-xs-2"></div>
     </div>
-    <div class="r-p-body-img">
+    <div class="r-p-body-img" style="margin-top: -2px;">
       <img src="../assets/img/child-place/c-p-picture.jpg">
     </div>
 
@@ -41,7 +36,7 @@
         <div class="col-xs-3 left">景点介绍</div>
         <div class="col-xs-2"></div>
         <div class="col-xs-7">
-          <textarea style="height: 4.5rem;width: 100%;margin-top: 0.25rem;">{{scene_info.text}}</textarea>
+          <textarea style="height: 4.5rem;width: 100%;margin-top: 0.25rem;border: 0;">{{scene_info.text}}</textarea>
         </div>
       </div>
     </div>
@@ -144,11 +139,13 @@
     data:function(){
       return{
         scene_info:'',
-        scene_id:0
+        scene_id:0,
+        value:""
       }
     },
     mounted:function () {
       var scene_id=this.$route.params.id;
+      this.value=this.$route.params.value;
       this.scene_id=scene_id;
       var _this = this;
       Axios.get("http://localhost:3000/publish_scene", {
@@ -186,5 +183,9 @@
 .row .right{
   text-align: left;
 }
+  .header div{
+    text-align: center;
+    line-height: 1.5rem;
+  }
 </style>
 

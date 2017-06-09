@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="banner2">
-        <router-link to="/travel_notes" style="color: #2c3e50;"><div class="row list">
+        <router-link :to="my_blog" style="color: #2c3e50;"><div class="row list">
           <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
           <span>我的游记</span>
           <span class="glyphicon glyphicon-chevron-right right" aria-hidden="true"></span>
@@ -117,7 +117,8 @@ export default{
           user_info:{},
           flag:false,
           login_id:0,
-          setting:""
+          setting:"",
+          my_blog:""
       }
     },
     methods:{
@@ -132,9 +133,11 @@ export default{
         var new_arr=arr.split("=")[1];
         this.login_id=Number(new_arr[1]);
         this.setting="/setting";
+        this.my_blog="/travel_notes";
       }else{
         this.flag=false;
         this.setting="/login_ma";
+        this.my_blog="/login_ma";
       }
       var _this=this;
       Axios.get("http://localhost:3000/user_by_id",{

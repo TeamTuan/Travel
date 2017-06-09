@@ -78,7 +78,7 @@ export default new Router({
       component: child_place
     },
     {
-      path: '/reply/:id',
+      path: '/reply/:id/:value',
       name: 'reply',
       component: reply
     },
