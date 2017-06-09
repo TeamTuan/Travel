@@ -7,7 +7,7 @@
         <div class="col-xs-3" style="height: 100%;">
           <div class="row row2" style="">
             <div class="col-xs-6" style="line-height: 1rem;text-align: center;"><span class=" glyphicon glyphicon-bell" aria-hidden="true" style="font-size:35px;"></span></div>
-            <div class="col-xs-6" style="line-height: 1rem;text-align: center;"><router-link to="/setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="font-size:35px;"></span></router-link></div>
+            <div class="col-xs-6" style="line-height: 1rem;text-align: center;"><router-link :to="setting" style="color: white;height: 0.5rem;width: 0.5rem;display: inline-block;margin-left: -0.5rem"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="font-size:35px;"></span></router-link></div>
 
 
           </div>
@@ -115,7 +115,9 @@ export default{
     data:function () {
       return {
           user_info:{},
-          flag:false
+          flag:false,
+          login_id:0,
+          setting:""
       }
     },
     methods:{
@@ -126,17 +128,22 @@ export default{
       }
     },
     mounted:function () {
+
       console.log(document.cookie);
       if(document.cookie){
         this.flag=true;
+        var arr=document.cookie.split(";")[1];
+        var new_arr=arr.split("=")[1];
+        this.login_id=Number(new_arr[1]);
+        this.setting="/setting";
       }else{
         this.flag=false;
+        this.setting="/login_ma";
       }
-      var id=this.$route.params.id;
       var _this=this;
       Axios.get("http://localhost:3000/user_by_id",{
         params:{
-          id:id
+          id:_this.login_id
         }
       }).then(function (res) {
         _this.user_info=JSON.parse(res.data);

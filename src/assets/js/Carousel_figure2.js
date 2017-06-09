@@ -3,8 +3,6 @@ $(function () {
   var mask = document.getElementById('mask');
   var startPosition, endPosition, deltaX, deltaY, moveLength;
   var indexcount=$(".menu2").width()-$(".bannerr2").width();
-  console.log($(".menu2").width());
-  console.log($(".bannerr2").width());
 
   /*手指按下瞬间触发touchstart事件*/
   var left=0;
@@ -34,7 +32,6 @@ $(function () {
         if(now_left>=-indexcount) {
           $(".menu2").css("left", left-moveLength);
         }
-        console.log(left);
       }
     };
     swipeLeft();   //执行该函数
@@ -46,7 +43,6 @@ $(function () {
         if(now_left2<0){
           $(".menu2").css("left",parseInt(left)+moveLength);
         }
-        console.log(left);
       }
     };
     swipeRight();

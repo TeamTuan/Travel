@@ -44,7 +44,7 @@
           exit:function () {
             document.cookie = "logined=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
             document.cookie = "login_id=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-            this.$router.push("/user/null");
+            this.$router.push("/user");
           }
       }
   };
