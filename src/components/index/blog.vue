@@ -14,6 +14,7 @@
         <p style="width: 9rem;margin-left: 0.5rem;">{{ blog.content }}</p>
       </div>
     </div>
+
   </div>
 
 </template>
@@ -32,8 +33,9 @@
       Axios.get("http://localhost:3000/get_blog")
         .then(function (res) {
           _this.bloglist=JSON.parse(res.data);
+          console.log(JSON.parse(res.data));
       });
-
+      console.log(666);
     },
     methods:{
 
