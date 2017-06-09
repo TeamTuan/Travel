@@ -54,7 +54,8 @@ export default new Router({
       path: '/travel_notes',
       name: 'travel_notes',
       component: travel_notes
-    },
+    }
+    ,
     {
       path: '/add_notes',
       name: 'add_notes',
