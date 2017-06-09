@@ -58,8 +58,6 @@ export default new Router({
     }
     ,
     {
-    },
-    {
       path: '/add_notes',
       name: 'add_notes',
       component: add_notes
