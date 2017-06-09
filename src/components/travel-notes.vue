@@ -2,7 +2,7 @@
 <div>
   <div class="travel-notes"  >
     <div class="a_header">
-      <router-link to="/user/null/null" style="color: white;"><div><span class="arrows"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></span></div></router-link>
+      <router-link to="/user" style="color: white;"><div><span class="arrows"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></span></div></router-link>
 
       <div class="col-xs-8"><h2>我的游记</h2></div>
     </div>
