@@ -2,7 +2,7 @@
   <div>
     <div class="header" style="width:10rem;height:1.5rem;background:#439865;">
       <div class="col-xs-2">
-        <router-link to="/change_user" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
+        <router-link to="/" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
       </div>
       <div class="col-xs-8" style="color:white;text-align:center;line-height:1.5rem;">{{value}}</div>
       <div class="col-xs-2">

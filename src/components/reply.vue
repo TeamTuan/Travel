@@ -17,10 +17,26 @@
     </div>
 
     <div class="row">
-      <div class="row" style="height: 1rem;"></div>
-      <div class="row"></div>
-      <div class="row"></div>
-      <div class="row"></div>
+      <div class="row" style="height: 1rem;">
+        <div class="col-xs-3 left">英文名字</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-7 right">{{scene_info.englishname}}</div>
+      </div>
+      <div class="row" style="height: 1rem;">
+        <div class="col-xs-3 left">所在位置</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-7 right">{{scene_info.position}}</div>
+      </div>
+      <div class="row" style="height: 1rem;">
+        <div class="col-xs-3 left">去过的人数</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-7 right">{{scene_info.count}}</div>
+      </div>
+      <div class="row" style="height: 1rem;">
+        <div class="col-xs-3 left">评价</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-7 right">{{scene_info.grade}}</div>
+      </div>
     </div>
 
 
@@ -143,4 +159,24 @@
 <style src="../assets/lib/bootstrap/css/bootstrap.css" scoped></style>
 <style src="../assets/lib/bootstrap/css/bootstrap-theme.css" scoped></style>
 <style src="../assets/lib/bootstrap/css/bootstrap-theme.min.css" scoped></style>
+<style scoped>
+  .row{
+    margin: 0;
+    padding: 0;
+  }
+  .row div{
+    height: 100%;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .row .left{
+    text-align: right;
+  }
+.row .right{
+  text-align: left;
+}
+</style>
 
