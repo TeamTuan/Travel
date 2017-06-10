@@ -14,7 +14,9 @@
         <p style="width: 9rem;margin-left: 0.5rem;">{{ blog.content }}</p>
       </div>
     </div>
-
+    <div class="row" style="height: 1rem;">
+      <button @click="click" style="height: 100%;border-radius:15px;width: 100%;background:limegreen;color: white;">点击加载更多</button>
+    </div>
   </div>
 
 </template>
@@ -24,21 +26,32 @@
   export default {
     data:function () {
       return {
-        bloglist:[]
+        bloglist:[],
+        pages:0
       }
     },
-    created:function () {
+    mounted:function () {
       var _this=this;
-
-      Axios.get("http://localhost:3000/get_blog")
-        .then(function (res) {
+      Axios.get("http://localhost:3000/get_blog",{
+        params:{
+          pages:this.pages
+        }
+      }).then(function (res) {
           _this.bloglist=JSON.parse(res.data);
           console.log(JSON.parse(res.data));
       });
-      console.log(666);
     },
     methods:{
-
+      click:function () {
+        var _this=this;
+        Axios.get("http://localhost:3000/get_blog",{
+          params:{
+            pages:++this.pages
+          }
+        }).then(function (res) {
+          _this.bloglist=_this.bloglist.concat(JSON.parse(res.data));
+        });
+      }
     }
   }
 </script>
