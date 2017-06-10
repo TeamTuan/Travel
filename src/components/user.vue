@@ -26,7 +26,9 @@
           </div>
         </div>
         <div class="row" style="line-height:2rem;height: 2rem;">
-          <div class="col-xs-2 col-xs-offset-1">
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-2">
             <span>0</span>粉丝
           </div>
           <div class="col-xs-2">

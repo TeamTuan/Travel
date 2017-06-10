@@ -61,13 +61,17 @@
 
 
 
-    <div class="r-p-youji">
-      <div class="r-yj-header">
-        <span class="glyphicon glyphicon-pencil"></span>
-        <span>东京评论推荐</span>
+    <div class="">
+
+      <div style="height: 1rem;font-size: 35px;" class="row">
+        <div class="col-xs-12" style="text-align: left;line-height: 1rem;height: 1rem;">
+          <span style="font-size: 35px;">评论:</span>
+        </div>
       </div>
+
       <div class="r-yj-body">
-        <div class="r-yj-1">
+
+        <div class="comment">
           <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
             <div class="yj-1-container">
               【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
@@ -84,9 +88,9 @@
               <span class="yj-pinglun">评论</span>
             </router-link>
           </div>
-          <br><hr>
         </div>
-        <div class="r-yj-1">
+
+        <div class="comment">
           <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
             <div class="yj-1-container">
               【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
@@ -103,9 +107,9 @@
               <span class="yj-pinglun">评论</span>
             </router-link>
           </div>
-          <br><hr>
         </div>
-        <div class="r-yj-1">
+
+        <div class="comment">
           <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
             <div class="yj-1-container">
               【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
@@ -122,8 +126,8 @@
               <span class="yj-pinglun">评论</span>
             </router-link>
           </div>
-          <br><hr>
         </div>
+
         <router-link to="/travel_notes" style="text-decoration: none;color: #11bf79">
           <div class="yj-more">
             更多东京评论
@@ -131,6 +135,7 @@
         </router-link>
       </div>
     </div>
+
   </div>
 </template>
 <script>
@@ -186,6 +191,9 @@
   .header div{
     text-align: center;
     line-height: 1.5rem;
+  }
+  .comment{
+    margin-top: 0.3rem;
   }
 </style>
 
