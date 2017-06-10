@@ -7,34 +7,41 @@
       </div>
       <div class="row bannerlist" style="padding: 0;margin: 0;">
         <div class="row list">
+          <div class="col-xs-1"></div>
           <div class="col-xs-3">头像</div>
-          <div class="col-xs-5"></div>
+          <div class="col-xs-4"></div>
           <div class="col-xs-3"><img src="../assets/img/morentouxiang.jpeg" alt=""  class="img-circle" style="height:0.8rem;width:0.8rem;"></div>
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
 
         <router-link to="/user_name" style="color: #2c3e50;">
-          <div class="row list"><div class="col-xs-3">用户昵称</div>
-            <div class="col-xs-5"></div>
+          <div class="row list">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-3">用户昵称</div>
+            <div class="col-xs-4"></div>
             <div class="col-xs-3">{{ user_info.name }}</div>
             <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
           </div>
         </router-link>
 
         <div class="row list" @click="sex_btn">
+          <div class="col-xs-1"></div>
           <div class="col-xs-3">性别</div>
-          <div class="col-xs-5"></div>
+          <div class="col-xs-4"></div>
           <div class="col-xs-3" style="text-align: center;line-height: 1.2rem;">{{ sex }}</div>
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
-        <div class="row list"><div class="col-xs-3">常居城市</div>
-          <div class="col-xs-4"></div>
+        <div class="row list">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-3">常居城市</div>
+          <div class="col-xs-3"></div>
           <div class="col-xs-4">{{ place }}</div>
           <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
         </div>
         <router-link to="/user_introduction" style="color: #2c3e50;">
+          <div class="col-xs-1"></div>
           <div class="row list"><div class="col-xs-3">个人简介</div>
-            <div class="col-xs-5"></div>
+            <div class="col-xs-4"></div>
             <div class="col-xs-3"></div>
             <div class="col-xs-1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
           </div>
@@ -53,7 +60,7 @@
       data:function () {
         return {
             show:false,
-            sex:0,
+            sex:"",
             login_id:0,
             user_info:{},
             place:""
@@ -75,7 +82,7 @@
           if(document.cookie){
             var arr=document.cookie.split(";")[1];
             var new_arr=arr.split("=")[1];
-            this.login_id=Number(new_arr[1]);
+            this.login_id=new_arr;
           }
 
           var _this=this;

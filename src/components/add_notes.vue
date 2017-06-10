@@ -44,7 +44,7 @@
         if(document.cookie){
           var arr=document.cookie.split(";")[1];
           var new_arr=arr.split("=")[1];
-          this.login_id=Number(new_arr[1]);
+          this.login_id=new_arr;
         }
         Axios.get("http://localhost:3000/save_blog", {
           params: {

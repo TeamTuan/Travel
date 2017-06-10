@@ -32,7 +32,7 @@
       if(document.cookie){
         var arr=document.cookie.split(";")[1];
         var new_arr=arr.split("=")[1];
-        this.login_id=Number(new_arr[1]);
+        this.login_id=new_arr;
       }
 
       var _this=this;
@@ -48,6 +48,7 @@
     methods:{
         save_introduction:function(){
             var value=this.intro;
+
             var _this=this;
             Axios.get('http://localhost:3000/save_introduction',{
                 params:{
@@ -55,7 +56,8 @@
                     value:value
                 }
             }).then(function(res){
-                console.log(JSON.parse(res.data));
+                console.log(res.data);
+                _this.$router.push("/change_user");
             })
         }
     }

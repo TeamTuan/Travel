@@ -17,7 +17,7 @@
       <input type="text" style="width: 9rem;margin-left: 0.5rem;height:1.3rem;margin-top:0.1rem;border:1px solid gray;border-radius: 10px;" class="user_name" v-model="name">
     </div>
     <div class="row" style="color: gray;height: 1.5rem;text-align: center;line-height: 1.5rem;width: 100%;">
-      可免费修改用户昵称一次，以后每次修改将消耗1600穷币
+      可免费修改用户昵称一次，以后每次修改消耗1600穷币
     </div>
   </div>
 </div>
@@ -35,7 +35,7 @@
       if(document.cookie){
         var arr=document.cookie.split(";")[1];
         var new_arr=arr.split("=")[1];
-        this.login_id=Number(new_arr[1]);
+        this.login_id=new_arr;
       }
 
       var _this=this;
@@ -59,6 +59,7 @@
             }
           }).then(function(res){
             console.log(JSON.parse(res.data));
+            _this.$router.push("/change_user");
           })
         }
     }

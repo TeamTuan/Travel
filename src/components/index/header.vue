@@ -7,7 +7,7 @@
         <div class="col-xs-10">
           <ul class="menu row" style="padding: 0;">
             <div class="col-xs-3">首页</div>
-            <div class="col-xs-3" @click="click">目的地</div>
+            <div class="col-xs-3">目的地</div>
             <div class="col-xs-3">商城</div>
             <div class="col-xs-3">社区</div>
           </ul>
@@ -29,9 +29,7 @@
       }
     },
     methods:{
-      click:function () {
-        this.$router.push("/user/1");
-      }
+
     }
   }
 </script>

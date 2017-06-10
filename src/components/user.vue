@@ -133,7 +133,7 @@ export default{
         this.flag=true;
         var arr=document.cookie.split(";")[1];
         var new_arr=arr.split("=")[1];
-        this.login_id=Number(new_arr[1]);
+        this.login_id=new_arr;
         this.setting="/setting";
         this.my_blog="/travel_notes";
       }else{
