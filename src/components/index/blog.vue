@@ -9,7 +9,7 @@
         <div style="text-align: center;">
           <img src="../../assets/img/morentouxiang.jpeg" alt="" class="small_img img-circle">
         </div>
-        <div style="text-align: center;margin-top: 0.5rem;">我在午夜醒来</div>
+        <div style="text-align: center;margin-top: 0.5rem;">{{ blog.name }}</div>
         <div style="text-align: center;margin-top: 0.5rem;font-size: 30px;margin-bottom: 0.5rem;">{{ blog.title }}</div>
         <p style="width: 9rem;margin-left: 0.5rem;">{{ blog.content }}</p>
       </div>

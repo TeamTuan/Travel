@@ -16,27 +16,27 @@
     <div class="row">
       <div class="row" style="height: 1rem;">
         <div class="col-xs-3 left">英文名字</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <div class="col-xs-7 right">{{scene_info.englishname}}</div>
       </div>
       <div class="row" style="height: 1rem;">
         <div class="col-xs-3 left">所在位置</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <div class="col-xs-7 right">{{scene_info.position}}</div>
       </div>
       <div class="row" style="height: 1rem;">
         <div class="col-xs-3 left">去过的人数</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <div class="col-xs-7 right">{{scene_info.count}}</div>
       </div>
       <div class="row" style="height: 1rem;">
         <div class="col-xs-3 left">评价</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <div class="col-xs-7 right">{{scene_info.grade}}</div>
       </div>
       <div class="row" style="height: 5rem;">
         <div class="col-xs-3 left">景点介绍</div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <div class="col-xs-7">
           <textarea style="height: 4.5rem;width: 100%;margin-top: 0.25rem;border: 0;">{{scene_info.text}}</textarea>
         </div>

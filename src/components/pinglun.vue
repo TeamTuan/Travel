@@ -8,12 +8,12 @@
         </div>
       </div>
       <div class="row info" style="height: 1rem;">
-        <div class="col-xs-2">asdasd</div>
-        <div class="col-xs-2">asdasd</div>
-        <div class="col-xs-2">asdasd</div>
-        <div class="col-xs-4">{{ comment.time }}</div>
-        <div class="col-xs-1">+</div>
-        <div class="col-xs-1">-</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-1"></div>
       </div>
     </div>
     <div>
