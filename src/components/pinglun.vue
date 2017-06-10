@@ -47,6 +47,9 @@
       })
 
 
+    },
+    methods:{
+
     }
 }
 </script>

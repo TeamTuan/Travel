@@ -54,17 +54,22 @@
       </div>
       <div class="row">
 
-        <pinglun class="pinglun" v-for="comment in commentlist" :comment="comment"></pinglun>
+        <pinglun class="pinglun" v-for="comment in commentlist" :comment="comment" @show_comment="show_comment"></pinglun>
 
       </div>
     </div>
+
     <insert v-show="show" @exit_div="exit_div" :scene_id="scene_id" :values="value"></insert>
+    <insert_reply_comment v-show="show_comment"></insert_reply_comment>
+    <insert_reply_reply v-show="show_reply"></insert_reply_reply>
   </div>
 </template>
 <script>
   import Axios from 'axios';
   import pinglun from "./pinglun.vue";
   import insert from "./insert.vue";
+  import insert_reply_comment from "./insert_reply_comment.vue";
+  import insert_reply_reply from "./insert_reply_reply.vue";
   export default{
     data:function(){
       return{
@@ -72,7 +77,9 @@
         scene_id:0,
         value:"",
         commentlist:{},
-        show:false
+        show:false,
+        show_comment:false,
+        show_reply:false
       }
     },
     mounted:function () {
@@ -100,15 +107,20 @@
 
     },
     components:{
-      pinglun,insert
+      pinglun,insert,insert_reply_comment,insert_reply_reply
     },
     methods:{
         show_div:function () {
           this.show=true;
         },
-      exit_div:function (val) {
-        this.show=val;
-      }
+        exit_div:function (val) {
+          this.show=val;
+        },
+        show_comment:function(val){
+            console.log(val);
+
+
+        }
     }
   }
 </script>
