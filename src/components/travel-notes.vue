@@ -101,5 +101,4 @@
     height: 100%;
   }
 </style>
-<style src="../assets/css/travel-notes.css" scoped>
-</style>
+<style src="../assets/css/travel-notes.css" scoped></style>

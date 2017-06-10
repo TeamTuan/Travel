@@ -1,5 +1,6 @@
 <template>
   <div class="reply-place">
+    <!--//header-->
     <div class="header row" style="width:10rem;height:1.5rem;background:#11bf79;">
       <div class="col-xs-2">
         <router-link :to="'/child_place/'+value" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
@@ -7,10 +8,11 @@
       <div class="col-xs-8" style="color: whitesmoke;font-size: 30px;">{{scene_info.name}}</div>
       <div class="col-xs-2"></div>
     </div>
+    <!--//img显示-->
     <div class="r-p-body-img" style="margin-top: -2px;">
       <img src="../assets/img/child-place/c-p-picture.jpg">
     </div>
-
+    <!--//景点信息显示-->
     <div class="row">
       <div class="row" style="height: 1rem;">
         <div class="col-xs-3 left">英文名字</div>
@@ -40,112 +42,37 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="">
-
+    <!--//对景点的评论回复展示-->
+    <div class="row">
       <div style="height: 1rem;font-size: 35px;" class="row">
-        <div class="col-xs-12" style="text-align: left;line-height: 1rem;height: 1rem;">
-          <span style="font-size: 35px;">评论:</span>
+        <div class="col-xs-9" style="text-align: left;line-height: 1rem;height: 1rem;">
+          <span style="font-size: 35px;">评论</span>
+        </div>
+        <div class="col-xs-3">
+          <button @click="show_div" style="height: 100%;width: 100%;background:#439865;color: white;border-radius: 10px;" data-toggle="modal" data-target="#myModal">添加评论</button>
         </div>
       </div>
+      <div class="row">
 
-      <div class="r-yj-body">
+        <pinglun class="pinglun" v-for="comment in commentlist" :comment="comment"></pinglun>
 
-        <div class="comment">
-          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-            <div class="yj-1-container">
-              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-            </div>
-          </router-link>
-          <div class="yj-1-xs">
-            <span>yinyuyinyu</span>
-            <span>|</span>
-            <span>2017-5-27</span>
-            <span>|</span>
-            <span>201人喜欢</span>
-            <span class="glyphicon glyphicon-heart"></span>
-            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-              <span class="yj-pinglun">评论</span>
-            </router-link>
-          </div>
-        </div>
-
-        <div class="comment">
-          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-            <div class="yj-1-container">
-              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-            </div>
-          </router-link>
-          <div class="yj-1-xs">
-            <span>yinyuyinyu</span>
-            <span>|</span>
-            <span>2017-5-27</span>
-            <span>|</span>
-            <span>201人喜欢</span>
-            <span class="glyphicon glyphicon-heart"></span>
-            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-              <span class="yj-pinglun">评论</span>
-            </router-link>
-          </div>
-        </div>
-
-        <div class="comment">
-          <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-            <div class="yj-1-container">
-              【Fiorelady】跟着日剧游东京、京都、关西（1日东京人-东京寺庙静心/浴衣穿越-奈良梅花鹿-大阪买买买）
-            </div>
-          </router-link>
-          <div class="yj-1-xs">
-            <span>yinyuyinyu</span>
-            <span>|</span>
-            <span>2017-5-27</span>
-            <span>|</span>
-            <span>201人喜欢</span>
-            <span class="glyphicon glyphicon-heart"></span>
-            <router-link to="/travel_notes" style="text-decoration: none; color: #222222">
-              <span class="yj-pinglun">评论</span>
-            </router-link>
-          </div>
-        </div>
-
-        <router-link to="/travel_notes" style="text-decoration: none;color: #11bf79">
-          <div class="yj-more">
-            更多东京评论
-          </div>
-        </router-link>
       </div>
     </div>
-
+    <insert v-show="show" @exit_div="exit_div" :scene_id="scene_id" :values="value"></insert>
   </div>
 </template>
 <script>
   import Axios from 'axios';
+  import pinglun from "./pinglun.vue";
+  import insert from "./insert.vue";
   export default{
     data:function(){
       return{
         scene_info:'',
         scene_id:0,
-        value:""
+        value:"",
+        commentlist:{},
+        show:false
       }
     },
     mounted:function () {
@@ -159,8 +86,29 @@
         }
       }).then(function (res) {
         _this.scene_info=JSON.parse(res.data);
-        console.log(JSON.parse(res.data));
+
+      });
+
+      Axios.get("http://localhost:3000/select_comment_by_scene_id", {
+        params: {
+          id:scene_id
+        }
+      }).then(function (res) {
+        _this.commentlist=JSON.parse(res.data);
       })
+
+
+    },
+    components:{
+      pinglun,insert
+    },
+    methods:{
+        show_div:function () {
+          this.show=true;
+        },
+      exit_div:function (val) {
+        this.show=val;
+      }
     }
   }
 </script>
@@ -180,7 +128,7 @@
     padding: 0;
     font-size: 25px;
     font-weight: bold;
-    border-bottom: 2px solid #d8d8d8;
+
   }
   .row .left{
     text-align: right;

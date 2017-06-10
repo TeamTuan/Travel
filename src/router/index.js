@@ -15,6 +15,7 @@ import reply from '@/components/reply'
 import login_ma from '@/components/login_ma'
 import register_ma from '@/components/register_ma'
 import publish_notes from '@/components/publish_notes'
+import router from '@/components/router'
 Vue.use(Router);
 
 export default new Router({
@@ -96,6 +97,12 @@ export default new Router({
       path: '/publish_notes/:id',
       name: 'publish_notes',
       component: publish_notes
+    }
+    ,
+    {
+      path: '/router/:id/:value',
+      name: 'router',
+      component: router
     }
   ]
 })

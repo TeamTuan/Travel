@@ -4,7 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import "./assets/js/flexible";
-import "./assets/js/jquery-3.2.1.min";
+import "./assets/js/jquery-1.10.2.min";
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper);
 Vue.config.productionTip = false;
