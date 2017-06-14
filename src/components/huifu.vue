@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row" @click="show_reply_box">
       <div class="col-xs-4" style="text-align: right;">
         <span style="color:lightskyblue;">{{ from_username }}</span>
         <span>回复</span>
@@ -38,7 +38,17 @@ export default{
         _this.to_username=JSON.parse(res.data).to_name.name;
       });
 
+    },
+  methods:{
+    show_reply_box:function () {
+      var obj={
+        reply_id:this.reply_info.reply_id,
+        to_id:this.from_userid
+      };
+      this.$emit("show_reply_box",obj);
+
     }
+  }
 }
 </script>
 <style  scoped>

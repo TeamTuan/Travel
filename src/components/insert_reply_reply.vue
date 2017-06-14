@@ -6,11 +6,11 @@
     <div class="row" style="height: 1rem;">
       <div class="col-xs-6">
         <button @click="click" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
-          回复
+          回复2
         </button>
       </div>
       <div class="col-xs-6">
-        <button @click="exit_div" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
+        <button @click="exit_reply" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
           取消
         </button>
       </div>
@@ -21,7 +21,7 @@
 <script>
   import Axios from "axios";
   export default{
-    props:["scene_id","values"],
+    props:["scene_id","values","reply_id","to_id","comment_id_reply"],
     data:function () {
       return{
         value:"",
@@ -29,29 +29,34 @@
       }
     },
     methods:{
-      exit_div:function () {
-        this.$emit("exit_div",false);
+      exit_reply:function () {
+        this.$emit("exit_reply",false);
       },
       click:function () {
-        var value=this.value;
         if(document.cookie){
           var arr=document.cookie.split(";")[1];
           var new_arr=arr.split("=")[1];
           this.login_id=new_arr;
         }
+
+        var comment_id=this.comment_id_reply;
+        var reply_id=this.reply_id;
         var user_id=this.login_id;
-        var scene_id=this.scene_id;
+        var to_id=this.to_id;
+        var value=this.value;
 
         var _this=this;
-        Axios.get("http://localhost:3000/insert_comment",{
+        Axios.get("http://localhost:3000/insert_reply_reply",{
           params:{
-            scene_id:scene_id,
+            comment_id:comment_id,
+            reply_id:reply_id,
             user_id:user_id,
+            to_id:to_id,
             value:value
           }
         }).then(function (res) {
           console.log(res.data);
-          _this.exit_div();
+          _this.exit_reply();
           _this.$router.push("/router/"+_this.scene_id+"/"+_this.values);
         });
 

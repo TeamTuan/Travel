@@ -6,11 +6,11 @@
     <div class="row" style="height: 1rem;">
       <div class="col-xs-6">
         <button @click="click" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
-          回复
+          回复1
         </button>
       </div>
       <div class="col-xs-6">
-        <button @click="exit_div" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
+        <button @click="exit_comment" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
           取消
         </button>
       </div>
@@ -21,7 +21,7 @@
 <script>
   import Axios from "axios";
   export default{
-    props:["scene_id","values"],
+    props:["scene_id","values","comment_id","user_id"],
     data:function () {
       return{
         value:"",
@@ -30,23 +30,28 @@
     },
     methods:{
       exit_div:function () {
-        this.$emit("exit_div",false);
+        this.$emit("exit_comment",false);
       },
       click:function () {
         var value=this.value;
+
         if(document.cookie){
           var arr=document.cookie.split(";")[1];
           var new_arr=arr.split("=")[1];
           this.login_id=new_arr;
         }
-        var user_id=this.login_id;
-        var scene_id=this.scene_id;
 
+        var from_id=this.login_id;
+        var comment_id=this.comment_id;
+        var to_id=this.user_id;
         var _this=this;
-        Axios.get("http://localhost:3000/insert_comment",{
+
+
+        Axios.get("http://localhost:3000/insert_reply_comment",{
           params:{
-            scene_id:scene_id,
-            user_id:user_id,
+            comment_id:comment_id,
+            from_id:from_id,
+            to_id:to_id,
             value:value
           }
         }).then(function (res) {

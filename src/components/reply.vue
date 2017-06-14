@@ -54,14 +54,14 @@
       </div>
       <div class="row">
 
-        <pinglun class="pinglun" v-for="comment in commentlist" :comment="comment" @show_comment="show_comment"></pinglun>
+        <pinglun class="pinglun" v-for="comment in commentlist" :comment="comment" @show_reply_box="show_reply_box" @show_comment_box="show_comment_box"></pinglun>
 
       </div>
     </div>
 
     <insert v-show="show" @exit_div="exit_div" :scene_id="scene_id" :values="value"></insert>
-    <insert_reply_comment v-show="show_comment"></insert_reply_comment>
-    <insert_reply_reply v-show="show_reply"></insert_reply_reply>
+    <insert_reply_comment v-show="show_comment" @exit_comment="exit_comment" :comment_id="comment_id" :user_id="user_id" :scene_id="scene_id" :values="value"></insert_reply_comment>
+    <insert_reply_reply v-show="show_reply" @exit_reply="exit_reply" :reply_id="reply_id" :to_id="to_id" :comment_id_reply="comment_id_reply" :scene_id="scene_id" :values="value"></insert_reply_reply>
   </div>
 </template>
 <script>
@@ -79,7 +79,12 @@
         commentlist:{},
         show:false,
         show_comment:false,
-        show_reply:false
+        show_reply:false,
+        comment_id:0,
+        user_id:0,
+        reply_id:0,
+        to_id:0,
+        comment_id_reply:0
       }
     },
     mounted:function () {
@@ -111,15 +116,39 @@
     },
     methods:{
         show_div:function () {
-          this.show=true;
+          if(document.cookie){
+            this.show=true;
+          }else{
+            this.$router.push("/login_ma");
+          }
         },
         exit_div:function (val) {
           this.show=val;
         },
-        show_comment:function(val){
-            console.log(val);
-
-
+        show_comment_box:function(val){
+          if(document.cookie){
+            this.show_comment=true;
+            this.comment_id=val.comment_id;
+            this.user_id=val.user_id;
+          }else{
+            this.$router.push("/login_ma");
+          }
+        },
+        show_reply_box:function (val) {
+          if(document.cookie){
+            this.show_reply=true;
+            this.reply_id=val.reply_id;
+            this.to_id=val.to_id;
+            this.comment_id_reply=val.comment_id;
+          }else{
+            this.$router.push("/login_ma");
+          }
+        },
+        exit_comment:function (val) {
+          this.show_comment=false;
+        },
+        exit_reply:function () {
+          this.show_reply=false;
         }
     }
   }
