@@ -6,7 +6,7 @@
     <div class="row" style="height: 1rem;">
       <div class="col-xs-6">
         <button @click="click" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
-          回复2
+          回复回复
         </button>
       </div>
       <div class="col-xs-6">

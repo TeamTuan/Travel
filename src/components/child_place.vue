@@ -4,7 +4,7 @@
       <div class="col-xs-2">
         <router-link to="/" style="color:white;"><span class="glyphicon glyphicon-arrow-left"  style="font-size:30px;" aria-hidden="true"></span></router-link>
       </div>
-      <div class="col-xs-8" style="color:white;text-align:center;line-height:1.5rem;">{{value}}</div>
+      <div class="col-xs-8" style="color:white;text-align:center;line-height:1.5rem;">当前搜索:{{value}}</div>
       <div class="col-xs-2">
         <span class="glyphicon glyphicon-search"  style="font-size:30px;" aria-hidden="true"></span>
       </div>

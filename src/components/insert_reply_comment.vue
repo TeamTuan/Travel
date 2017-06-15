@@ -6,7 +6,7 @@
     <div class="row" style="height: 1rem;">
       <div class="col-xs-6">
         <button @click="click" style="width: 2rem;height: 100%;background:limegreen;color: white;border-radius: 20px;">
-          回复1
+          回复评论
         </button>
       </div>
       <div class="col-xs-6">
@@ -29,7 +29,7 @@
       }
     },
     methods:{
-      exit_div:function () {
+      exit_comment:function () {
         this.$emit("exit_comment",false);
       },
       click:function () {
@@ -56,7 +56,7 @@
           }
         }).then(function (res) {
           console.log(res.data);
-          _this.exit_div();
+          _this.exit_comment();
           _this.$router.push("/router/"+_this.scene_id+"/"+_this.values);
         });
 
