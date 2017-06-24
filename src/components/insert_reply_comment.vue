@@ -59,8 +59,6 @@
           _this.exit_comment();
           _this.$router.push("/router/"+_this.scene_id+"/"+_this.values);
         });
-
-
       }
     }
   }
